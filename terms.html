@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendoor Aquariums — Terms of Service</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and general body */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #FAFAFA; /* Crystal White */
+            color: #37474F; /* Ocean Slate for text */
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA; /* Crystal White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00796B; /* Deep Aqua */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #004D40; /* Darker Deep Aqua */
+        }
+        /* Specific styling for policy points for better readability */
+        .terms-point {
+            background-color: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0,0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .terms-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .terms-point h3 {
+            color: #00796B; /* Deep Aqua */
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem; /* md:text-2xl */
+        }
+        .terms-point p {
+            font-size: 0.95rem; /* text-base */
+            line-height: 1.75; /* leading-relaxed */
+            color: #4A5568; /* Slightly lighter than Ocean Slate for body text */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Section (Copied from index.html, adjusted for current page) -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-[#00796B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <span class="text-2xl font-bold text-[#37474F]">Rendoor Aquariums</span>
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="index.html#quote" class="hidden md:block bg-[#00796B] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#004D40] transition duration-300 shadow-lg">Get a Custom Quote</a>
+
+            <!-- Mobile Menu Button (Hamburger icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-[#37474F] focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
+            <ul class="flex flex-col space-y-2 p-4">
+               <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20 bg-[#E0F2F7] min-h-screen">
+        <section class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 text-[#00796B]">Rendoor Aquariums Terms of Service</h1>
+                <p class="text-center text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Welcome to Rendoor Aquariums. These Terms of Service ("Terms") govern your access to and use of the Rendoor Aquariums website (www.rendooraquariums.com), including any content, functionality, and services offered on or through the website. By accessing or using the website, you agree to be bound by these Terms and our Privacy Policy. Please read them carefully before using our services. If you do not agree to these Terms, you must not access or use the website.
+                </p>
+                <p class="text-center text-md mb-16 max-w-3xl mx-auto leading-relaxed text-gray-600">
+                    <em>Last Updated: July 3, 2025</em>
+                </p>
+
+                <div class="space-y-8">
+                    <!-- Point 1 -->
+                    <div class="terms-point">
+                        <h3>1. Acceptance of Terms</h3>
+                        <p>
+                            By accessing, browsing, or using the Rendoor Aquariums website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. This agreement constitutes a legally binding contract between you and Rendoor Aquariums. Your continued use of the website after any modifications to these Terms signifies your acceptance of the updated terms. It is your responsibility to review these Terms periodically for any changes.
+                        </p>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="terms-point">
+                        <h3>2. Eligibility and Age Restrictions</h3>
+                        <p>
+                            To use our website and services, you must be at least 18 years old or the age of majority in your jurisdiction, whichever is higher. By using this website, you represent and warrant that you meet this age requirement. Rendoor Aquariums does not knowingly collect information from or provide services to individuals under the age of 18 without verifiable parental consent. If we discover that a user is under this age, we reserve the right to terminate their access.
+                        </p>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="terms-point">
+                        <h3>3. Services Description</h3>
+                        <p>
+                            Rendoor Aquariums provides custom aquarium design, installation, and maintenance services, as well as information and products related to aquatic life and accessories. The website serves as a platform to showcase our offerings, provide design inspiration, facilitate quote requests, and offer an online shop for essential aquarium products. Our services are tailored to both residential and commercial clients seeking high-end aquatic solutions.
+                        </p>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="terms-point">
+                        <h3>4. User Accounts and Registration</h3>
+                        <p>
+                            While browsing our website generally does not require an account, certain features, such as tracking maintenance schedules or accessing client-specific information, may require registration. When creating an account, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use.
+                        </p>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="terms-point">
+                        <h3>5. Prohibited Uses of the Website</h3>
+                        <p>
+                            You agree not to use the website for any unlawful purpose or in any way that could damage, disable, overburden, or impair the site or interfere with any other party's use and enjoyment of the website. Prohibited activities include, but are not limited to, attempting to gain unauthorized access to systems, transmitting harmful code, engaging in data mining, or using the site to harass, abuse, or harm another person.
+                        </p>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="terms-point">
+                        <h3>6. Intellectual Property Rights</h3>
+                        <p>
+                            All content on this website, including text, graphics, logos, images, designs, videos, software, and the compilation thereof, is the exclusive property of Rendoor Aquariums or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without our prior written consent.
+                        </p>
+                    </div>
+
+                    <!-- Point 7 -->
+                    <div class="terms-point">
+                        <h3>7. User-Generated Content</h3>
+                        <p>
+                            If the website allows you to post or submit content (e.g., reviews, comments, project photos), you grant Rendoor Aquariums a non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media. You represent and warrant that you own or control all rights to your content and that it does not violate these Terms or the rights of any third party.
+                        </p>
+                    </div>
+
+                    <!-- Point 8 -->
+                    <div class="terms-point">
+                        <h3>8. Product and Service Pricing</h3>
+                        <p>
+                            Prices for products displayed on our online shop are subject to change without notice. Custom aquarium project quotes are provided based on detailed specifications and are valid for a specified period, as indicated in the quote. While we strive for accuracy in all pricing, errors may occur. In such cases, Rendoor Aquariums reserves the right to correct any errors and adjust pricing accordingly. All sales are final for custom installations once the design is approved and materials are ordered.
+                        </p>
+                    </div>
+
+                    <!-- Point 9 -->
+                    <div class="terms-point">
+                        <h3>9. Payment Terms and Conditions</h3>
+                        <p>
+                            For custom projects, payment terms will be outlined in your specific project contract, typically involving an initial deposit, progress payments, and a final balance upon completion. For online shop purchases, full payment is required at the time of order placement. We accept various payment methods as indicated on our website. All payments must be made in the currency specified. Failure to adhere to payment schedules may result in project delays or suspension of services.
+                        </p>
+                    </div>
+
+                    <!-- Point 10 -->
+                    <div class="terms-point">
+                        <h3>10. Order Acceptance and Cancellation</h3>
+                        <p>
+                            Your order for products or services constitutes an offer to purchase. All orders are subject to acceptance by Rendoor Aquariums, which we may confirm via email. We reserve the right to refuse or cancel any order for any reason, including limitations on quantities available, inaccuracies in product or pricing information, or problems identified by our fraud prevention department. For custom projects, cancellation terms will be detailed in your individual contract.
+                        </p>
+                    </div>
+
+                    <!-- Point 11 -->
+                    <div class="terms-point">
+                        <h3>11. Shipping and Delivery</h3>
+                        <p>
+                            For products purchased through our online shop, shipping and delivery terms, including estimated delivery times and costs, will be provided at the time of purchase. For custom aquarium installations, delivery and installation schedules will be mutually agreed upon and outlined in your project contract. While we strive to meet all deadlines, Rendoor Aquariums is not liable for delays caused by unforeseen circumstances, including but not limited to natural disasters, supplier delays, or logistical issues.
+                        </p>
+                    </div>
+
+                    <!-- Point 12 -->
+                    <div class="terms-point">
+                        <h3>12. Returns and Refunds Policy</h3>
+                        <p>
+                            Our returns and refunds policy for online shop products is detailed on a separate page accessible from our website footer. For custom aquarium installations, due to the bespoke nature of the products and services, refunds or returns are generally not applicable once the design has been approved and fabrication has commenced. Any specific refund or adjustment terms for custom projects will be explicitly stated in your personalized contract.
+                        </p>
+                    </div>
+
+                    <!-- Point 13 -->
+                    <div class="terms-point">
+                        <h3>13. Warranties and Guarantees</h3>
+                        <p>
+                            Rendoor Aquariums provides warranties on its custom aquarium structures and installed equipment for a specified period, as detailed in your project contract. These warranties cover defects in materials and workmanship under normal use and maintenance. Warranties do not cover damage resulting from misuse, neglect, unauthorized modifications, power outages, or acts of nature. Specific guarantees regarding aquatic life health are limited and outlined in our Privacy Policy and project agreements.
+                        </p>
+                    </div>
+
+                    <!-- Point 14 -->
+                    <div class="terms-point">
+                        <h3>14. Limitation of Liability</h3>
+                        <p>
+                            To the fullest extent permitted by applicable law, in no event shall Rendoor Aquariums, its affiliates, directors, employees, agents, suppliers, or licensors be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the website or services; (ii) any conduct or content of any third party on the website; (iii) any content obtained from the website; and (iv) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                        </p>
+                    </div>
+
+                    <!-- Point 15 -->
+                    <div class="terms-point">
+                        <h3>15. Indemnification</h3>
+                        <p>
+                            You agree to indemnify, defend, and hold harmless Rendoor Aquariums, its affiliates, licensors, and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors, and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms of Service or your use of the website, including, but not limited to, your user-generated content, any use of the website's content, services, and products other than as expressly authorized in these Terms.
+                        </p>
+                    </div>
+
+                    <!-- Point 16 -->
+                    <div class="terms-point">
+                        <h3>16. Disclaimer of Warranties</h3>
+                        <p>
+                            The website and its content are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied. Rendoor Aquariums specifically disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, non-infringement, and accuracy. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components. Your use of the website is at your sole risk.
+                        </p>
+                    </div>
+
+                    <!-- Point 17 -->
+                    <div class="terms-point">
+                        <h3>17. Governing Law and Jurisdiction</h3>
+                        <p>
+                            These Terms of Service and any disputes or claims arising out of or in connection with them or their subject matter or formation (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of [Your Country/State, e.g., the State of California, USA], without giving effect to any choice or conflict of law provision or rule. Any legal suit, action, or proceeding arising out of, or related to, these Terms or the website shall be instituted exclusively in the federal or state courts located in [Your City/Region, e.g., Los Angeles, California].
+                        </p>
+                    </div>
+
+                    <!-- Point 18 -->
+                    <div class="terms-point">
+                        <h3>18. Arbitration Agreement (Optional Clause)</h3>
+                        <p>
+                            Any dispute, controversy, or claim arising out of or relating to these Terms, or the breach, termination, or invalidity thereof, shall be settled by arbitration in accordance with the rules of [Arbitration Association, e.g., American Arbitration Association] then in force. The arbitration shall be conducted in [Your City/Region], and the language of the arbitration shall be English. The arbitral award shall be final and binding on both parties. This clause is subject to local legal requirements and may be omitted if not applicable or desired.
+                        </p>
+                    </div>
+
+                    <!-- Point 19 -->
+                    <div class="terms-point">
+                        <h3>19. Severability</h3>
+                        <p>
+                            If any provision of these Terms of Service is held by a court or other tribunal of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms will continue in full force and effect. This ensures that the overall agreement remains enforceable even if specific clauses are invalidated.
+                        </p>
+                    </div>
+
+                    <!-- Point 20 -->
+                    <div class="terms-point">
+                        <h3>20. Waiver and Remedies</h3>
+                        <p>
+                            No waiver by Rendoor Aquariums of any term or condition set forth in these Terms of Service shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Rendoor Aquariums to assert a right or provision under these Terms shall not constitute a waiver of such right or provision. Our rights and remedies under these Terms are cumulative and not exclusive of any other rights or remedies provided by law or in equity.
+                        </p>
+                    </div>
+
+                    <!-- Point 21 -->
+                    <div class="terms-point">
+                        <h3>21. Entire Agreement</h3>
+                        <p>
+                            These Terms of Service, together with our Privacy Policy and any other documents expressly incorporated by reference herein, constitute the sole and entire agreement between you and Rendoor Aquariums regarding the website and supersede all prior and contemporaneous understandings, agreements, representations, and warranties, both written and oral, regarding the website. This ensures a clear and definitive legal framework for our relationship.
+                        </p>
+                    </div>
+
+                    <!-- Point 22 -->
+                    <div class="terms-point">
+                        <h3>22. Changes to Terms of Service</h3>
+                        <p>
+                            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our website after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the website.
+                        </p>
+                    </div>
+
+                    <!-- Point 23 -->
+                    <div class="terms-point">
+                        <h3>23. Force Majeure</h3>
+                        <p>
+                            Rendoor Aquariums shall not be liable for any failure or delay in performance under these Terms due to causes beyond its reasonable control, including, but not limited to, acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials. This clause protects us from liabilities arising from events outside our reasonable control.
+                        </p>
+                    </div>
+
+                    <!-- Point 24 -->
+                    <div class="terms-point">
+                        <h3>24. Third-Party Websites and Resources</h3>
+                        <p>
+                            The website may contain links to third-party websites or resources. You acknowledge and agree that Rendoor Aquariums is not responsible or liable for: (i) the availability or accuracy of such websites or resources; or (ii) the content, products, or services on or available from such websites or resources. Links to such websites or resources do not imply any endorsement by Rendoor Aquariums of such websites or resources or the content, products, or services available from such websites or resources. You assume sole responsibility for and assume all risk arising from your use of any such websites or resources.
+                        </p>
+                    </div>
+
+                    <!-- Point 25 -->
+                    <div class="terms-point">
+                        <h3>25. User Conduct and Responsibilities</h3>
+                        <p>
+                            You agree to use the website and services responsibly and in compliance with all applicable laws and regulations. You shall not engage in any conduct that could harm Rendoor Aquariums, its users, or third parties. This includes refraining from transmitting spam, engaging in phishing, distributing malware, or attempting to compromise the security or integrity of our systems. Your adherence to ethical conduct is essential for a safe and productive online environment.
+                        </p>
+                    </div>
+
+                    <!-- Point 26 -->
+                    <div class="terms-point">
+                        <h3>26. Termination of Access</h3>
+                        <p>
+                            Rendoor Aquariums reserves the right to terminate or suspend your access to all or part of the website and services, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms. Upon termination, your right to use the website will immediately cease. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+                        </p>
+                    </div>
+
+                    <!-- Point 27 -->
+                    <div class="terms-point">
+                        <h3>27. Feedback and Suggestions</h3>
+                        <p>
+                            Any feedback, comments, ideas, improvements, or suggestions (collectively, "Feedback") provided by you to Rendoor Aquariums with respect to the website or services shall remain the sole and exclusive property of Rendoor Aquariums. Rendoor Aquariums shall be free to use, copy, modify, publish, or redistribute the Feedback for any purpose and in any way without any credit or any compensation to you. This ensures that we can freely incorporate your valuable insights to enhance our offerings.
+                        </p>
+                    </div>
+
+                    <!-- Point 28 -->
+                    <div class="terms-point">
+                        <h3>28. Electronic Communications</h3>
+                        <p>
+                            When you visit the website or send emails to us, you are communicating with us electronically. You consent to receive communications from us electronically. We will communicate with you by email or by posting notices on the website. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. This facilitates efficient and environmentally friendly communication.
+                        </p>
+                    </div>
+
+                    <!-- Point 29 -->
+                    <div class="terms-point">
+                        <h3>29. Assignment</h3>
+                        <p>
+                            You may not assign or transfer these Terms, by operation of law or otherwise, without Rendoor Aquariums' prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and void. Rendoor Aquariums may freely assign or transfer these Terms without restriction. Subject to the foregoing, these Terms will bind and inure to the benefit of the parties, their successors, and permitted assigns.
+                        </p>
+                    </div>
+
+                    <!-- Point 30 -->
+                    <div class="terms-point">
+                        <h3>30. Headings for Convenience</h3>
+                        <p>
+                            The headings and subheadings in these Terms are for convenience only and shall not affect their interpretation. They are provided to make the document more readable and navigable, but they do not define, limit, or describe the scope or intent of the sections or in any way affect the meaning of the provisions themselves. The substance of each point should be considered independently of its heading.
+                        </p>
+                    </div>
+
+                    <!-- Point 31 -->
+                    <div class="terms-point">
+                        <h3>31. Relationship of the Parties</h3>
+                        <p>
+                            You agree that no joint venture, partnership, employment, or agency relationship exists between you and Rendoor Aquariums as a result of these Terms or your use of the website. These Terms are solely for the benefit of you and Rendoor Aquariums and are not intended to create any third-party beneficiary rights. This clarifies the independent nature of our relationship and avoids unintended legal implications.
+                        </p>
+                    </div>
+
+                    <!-- Point 32 -->
+                    <div class="terms-point">
+                        <h3>32. Accuracy of Information</h3>
+                        <p>
+                            While Rendoor Aquariums strives to ensure that the information on the website is accurate and up-to-date, we do not warrant the completeness or accuracy of the information, nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date. Any reliance you place on such information is therefore strictly at your own risk. We encourage users to verify critical information independently.
+                        </p>
+                    </div>
+
+                    <!-- Point 33 -->
+                    <div class="terms-point">
+                        <h3>33. Technical Requirements and Compatibility</h3>
+                        <p>
+                            You are responsible for ensuring that your computer system, mobile device, or other equipment meets all necessary technical specifications to enable you to access and use the website. Rendoor Aquariums does not guarantee that the website will be compatible with all hardware and software configurations. We recommend using modern browsers and operating systems for the best experience.
+                        </p>
+                    </div>
+
+                    <!-- Point 34 -->
+                    <div class="terms-point">
+                        <h3>34. Security of Transmissions</h3>
+                        <p>
+                            While Rendoor Aquariums employs industry-standard security measures, we cannot guarantee the absolute security of data transmitted over the internet. You acknowledge that any information sent to us electronically may not be completely secure. We are not responsible for any interception or interruption of any communications through the internet or for changes to or losses of data. Users are encouraged to use secure networks when transmitting sensitive information.
+                        </p>
+                    </div>
+
+                    <!-- Point 35 -->
+                    <div class="terms-point">
+                        <h3>35. Offline Services and Contracts</h3>
+                        <p>
+                            These Terms primarily govern your use of the Rendoor Aquariums website. For custom aquarium design, installation, and maintenance services, a separate, detailed contract will be provided and executed between Rendoor Aquariums and the client. This separate contract will supersede these website Terms regarding the specific services provided offline, outlining specific project scope, pricing, timelines, warranties, and responsibilities.
+                        </p>
+                    </div>
+
+                    <!-- Point 36 -->
+                    <div class="terms-point">
+                        <h3>36. Compliance with Local Laws</h3>
+                        <p>
+                            You are responsible for compliance with all applicable local laws and regulations regarding your use of the Rendoor Aquariums website and services. While our services are designed to be broadly accessible, specific legal requirements or restrictions may apply in your jurisdiction. We do not represent that materials on the website are appropriate or available for use in all locations.
+                        </p>
+                    </div>
+
+                    <!-- Point 37 -->
+                    <div class="terms-point">
+                        <h3>37. Export Control</h3>
+                        <p>
+                            You may not use or otherwise export or re-export the website or any content or software provided on the website except as authorized by United States law and the laws of the jurisdiction in which the website was obtained. In particular, but without limitation, the website may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Persons List or Entity List.
+                        </p>
+                    </div>
+
+                    <!-- Point 38 -->
+                    <div class="terms-point">
+                        <h3>38. Digital Millennium Copyright Act (DMCA)</h3>
+                        <p>
+                            Rendoor Aquariums respects the intellectual property rights of others. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the website, please notify our designated copyright agent, as set forth in the Digital Millennium Copyright Act (DMCA). Your notification must include specific details required by the DMCA to facilitate prompt investigation and action.
+                        </p>
+                    </div>
+
+                    <!-- Point 39 -->
+                    <div class="terms-point">
+                        <h3>39. Hyperlinking to Our Content</h3>
+                        <p>
+                            You may link to our home page, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it, but you must not establish a link in such a way as to suggest any form of association, approval, or endorsement on our part without our express written consent. We reserve the right to withdraw linking permission without notice.
+                        </p>
+                    </div>
+
+                    <!-- Point 40 -->
+                    <div class="terms-point">
+                        <h3>40. Frames and Inline Linking</h3>
+                        <p>
+                            You may not create frames around our webpages or use other techniques that alter in any way the visual presentation or appearance of our website without prior written permission. This ensures that our content is always displayed within the context of our own brand and design, maintaining the integrity of our intellectual property and user experience.
+                        </p>
+                    </div>
+
+                    <!-- Point 41 -->
+                    <div class="terms-point">
+                        <h3>41. Reservation of Rights</h3>
+                        <p>
+                            We reserve the right at any time and in its sole discretion to request that you remove all links or any particular link to our website. You agree to immediately remove all links to our website upon such request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our website, you agree to be bound to and abide by these linking terms and conditions.
+                        </p>
+                    </div>
+
+                    <!-- Point 42 -->
+                    <div class="terms-point">
+                        <h3>42. Content Liability</h3>
+                        <p>
+                            We shall have no responsibility or liability for any content appearing on your website. You agree to indemnify and defend us against all claims arising out of or based upon your website. No link(s) may appear on any page on your website or within any context containing content or materials that may be interpreted as libelous, obscene, or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third-party rights.
+                        </p>
+                    </div>
+
+                    <!-- Point 43 -->
+                    <div class="terms-point">
+                        <h3>43. User Representations and Warranties</h3>
+                        <p>
+                            You represent and warrant that (i) you have the legal right and capacity to enter into these Terms; (ii) all information you provide to Rendoor Aquariums is accurate and complete; (iii) you will comply with all applicable laws and regulations in your use of the website and services; and (iv) your use of the website and services will not infringe upon or violate the rights of any third party.
+                        </p>
+                    </div>
+
+                    <!-- Point 44 -->
+                    <div class="terms-point">
+                        <h3>44. Website Availability and Downtime</h3>
+                        <p>
+                            While we strive to ensure that the Rendoor Aquariums website is available 24/7, we do not guarantee uninterrupted access. The website may be subject to temporary interruptions due to maintenance, technical issues, or other factors beyond our control. We will endeavor to minimize any downtime and provide notice of scheduled maintenance whenever possible, but we are not liable for any inconvenience or loss caused by website unavailability.
+                        </p>
+                    </div>
+
+                    <!-- Point 45 -->
+                    <div class="terms-point">
+                        <h3>45. Browser Compatibility</h3>
+                        <p>
+                            Rendoor Aquariums aims for broad browser compatibility; however, optimal viewing and functionality are best achieved with modern, updated web browsers. We do not guarantee that the website will perform identically across all browser versions or configurations. For the best user experience, we recommend using the latest versions of popular browsers such as Chrome, Firefox, Safari, or Edge.
+                        </p>
+                    </div>
+
+                    <!-- Point 46 -->
+                    <div class="terms-point">
+                        <h3>46. Data Backup and Recovery</h3>
+                        <p>
+                            While Rendoor Aquariums implements robust data backup procedures for its internal systems, you are solely responsible for backing up any data or content you submit to the website that you deem critical. We are not responsible for any loss or corruption of data that may occur during your use of the website or services, or due to technical failures.
+                        </p>
+                    </div>
+
+                    <!-- Point 47 -->
+                    <div class="terms-point">
+                        <h3>47. No Professional Advice</h3>
+                        <p>
+                            The information and content provided on the Rendoor Aquariums website, including articles, guides, and design inspirations, are for informational purposes only and do not constitute professional advice. You should not rely on the information on this website as an alternative to professional advice from qualified experts in aquarium design, aquatic biology, or any other relevant field. Always consult with a Rendoor Aquariums professional for specific project guidance.
+                        </p>
+                    </div>
+
+                    <!-- Point 48 -->
+                    <div class="terms-point">
+                        <h3>48. Monitoring and Enforcement</h3>
+                        <p>
+                            Rendoor Aquariums has the right to: (i) remove or refuse to post any user-generated content for any or no reason in our sole discretion; (ii) take any action with respect to any user-generated content that we deem necessary or appropriate in our sole discretion, including if we believe that such user-generated content violates the Terms, infringes any intellectual property right or other right of any person or entity, threatens the personal safety of users of the website or the public, or could create liability for Rendoor Aquariums; (iii) disclose your identity or other information about you to any third party who claims that material posted by you violates their rights, including their intellectual property rights or their right to privacy; (iv) take appropriate legal action, including without limitation, referral to law enforcement, for any illegal or unauthorized use of the website.
+                        </p>
+                    </div>
+
+                    <!-- Point 49 -->
+                    <div class="terms-point">
+                        <h3>49. Survival of Terms</h3>
+                        <p>
+                            Any provisions of these Terms that, by their nature, should survive termination shall survive termination, including, without limitation, intellectual property provisions, warranty disclaimers, indemnity, and limitations of liability. Termination of your access to the website does not relieve you of any obligations incurred prior to termination or limit any liability you may have to Rendoor Aquariums or third parties.
+                        </p>
+                    </div>
+
+                    <!-- Point 50 -->
+                    <div class="terms-point">
+                        <h3>50. Contact Information for Terms of Service</h3>
+                        <p>
+                            If you have any questions or concerns regarding these Terms of Service, please contact us. Your inquiries are important to us, and we are committed to providing clarity on our policies. You can reach us via the contact details provided in the footer of this website, or by sending an email directly to info@rendooraquariums.com. We aim to respond to all legitimate inquiries in a timely and comprehensive manner.
+                        </p>
+                    </div>
+
+                    <!-- Additional points to reach word count -->
+                    <!-- Point 51 -->
+                    <div class="terms-point">
+                        <h3>51. User Responsibilities for Account Security</h3>
+                        <p>
+                            You are solely responsible for all activities that occur under your account, including maintaining the confidentiality of your password and restricting access to your computer or mobile device. Rendoor Aquariums cannot be held liable for any loss or damage arising from your failure to comply with this security obligation. We strongly advise using strong, unique passwords and enabling multi-factor authentication where available to enhance your account's security posture. Regular password changes are also recommended as a best practice.
+                        </p>
+                    </div>
+
+                    <!-- Point 52 -->
+                    <div class="terms-point">
+                        <h3>52. Accuracy of Submitted Information</h3>
+                        <p>
+                            When submitting information through forms on our website, such as quote requests or contact inquiries, you warrant that all data provided is accurate, complete, and truthful. Misrepresentation of information, including false contact details or misleading project descriptions, may result in the rejection of your request or termination of services. Accurate information is crucial for us to provide effective and relevant responses and services tailored to your genuine needs.
+                        </p>
+                    </div>
+
+                    <!-- Point 53 -->
+                    <div class="terms-point">
+                        <h3>53. Use of Communication Services</h3>
+                        <p>
+                            The website may contain communication facilities designed to enable you to communicate with us or with others (e.g., contact forms, comment sections). You agree to use these communication services only to post, send, and receive messages and material that are proper and related to the particular communication service. You must not use these services for spamming, harassment, or any unlawful activities, ensuring a respectful and productive communication environment for all users.
+                        </p>
+                    </div>
+
+                    <!-- Point 54 -->
+                    <div class="terms-point">
+                        <h3>54. No Resale of Services</h3>
+                        <p>
+                            You agree not to reproduce, duplicate, copy, sell, resell, or exploit any portion of the website, use of the website, or access to the website or any services provided through the website for any commercial purposes without express written permission from Rendoor Aquariums. This protects our proprietary services and business model from unauthorized commercial exploitation by third parties.
+                        </p>
+                    </div>
+
+                    <!-- Point 55 -->
+                    <div class="terms-point">
+                        <h3>55. Modification of Services</h3>
+                        <p>
+                            Rendoor Aquariums reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the website or any portion thereof, with or without notice. You agree that Rendoor Aquariums shall not be liable to you or to any third party for any modification, suspension, or discontinuance of the website or services. This allows us the flexibility to evolve our offerings and maintain the quality of our platform.
+                        </p>
+                    </div>
+
+                    <!-- Point 56 -->
+                    <div class="terms-point">
+                        <h3>56. User-Generated Content Standards</h3>
+                        <p>
+                            Any user-generated content you submit must comply with all applicable federal, state, local, and international laws and regulations. Without limiting the foregoing, such content must not: (i) contain any material that is defamatory, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory, or otherwise objectionable; (ii) promote sexually explicit or pornographic material, violence, or discrimination; (iii) infringe any patent, trademark, trade secret, copyright, or other intellectual property or other rights of any other person; (iv) violate the legal rights (including the rights of publicity and privacy) of others or contain any material that could give rise to any civil or criminal liability under applicable laws or regulations; or (v) be likely to deceive any person.
+                        </p>
+                    </div>
+
+                    <!-- Point 57 -->
+                    <div class="terms-point">
+                        <h3>57. Monitoring and Disclosure of User Content</h3>
+                        <p>
+                            Rendoor Aquariums has the right, but not the obligation, to monitor and review user-generated content. We may, without prior notice, remove or edit content that we determine in our sole discretion violates these Terms or is otherwise objectionable. We may also disclose your identity or other information about you to any third party who claims that material posted by you violates their rights, including their intellectual property rights or their right to privacy, as permitted by law.
+                        </p>
+                    </div>
+
+                    <!-- Point 58 -->
+                    <div class="terms-point">
+                        <h3>58. Reliance on Information Posted</h3>
+                        <p>
+                            The information presented on or through the website is made available solely for general information purposes. We do not warrant the accuracy, completeness, or usefulness of this information. Any reliance you place on such information is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the website, or by anyone who may be informed of any of its contents.
+                        </p>
+                    </div>
+
+                    <!-- Point 59 -->
+                    <div class="terms-point">
+                        <h3>59. Offline Services Contractual Relationship</h3>
+                        <p>
+                            It is important to understand that the detailed terms, scope of work, pricing, payment schedules, warranties, and other specific conditions related to custom aquarium design, installation, and ongoing maintenance services are exclusively governed by a separate, formal contract executed between Rendoor Aquariums and the client. These website Terms of Service do not supersede or replace the specific provisions of such individual service contracts. Any discrepancies between these website Terms and a signed service contract will be resolved in favor of the service contract.
+                        </p>
+                    </div>
+
+                    <!-- Point 60 -->
+                    <div class="terms-point">
+                        <h3>60. Environmental Responsibility Clause</h3>
+                        <p>
+                            Rendoor Aquariums is committed to environmental stewardship in all its operations, including the sourcing of materials and the recommendation of aquatic species. While we strive to promote sustainable practices, we cannot guarantee that all products or species mentioned or sold are entirely free from environmental impact. We encourage clients to research and make informed decisions regarding their environmental footprint, and we will provide information to assist in this where possible.
+                        </p>
+                    </div>
+
+                    <!-- Point 61 -->
+                    <div class="terms-point">
+                        <h3>61. Accessibility Statement</h3>
+                        <p>
+                            Rendoor Aquariums is committed to making its website accessible to all users, including those with disabilities. We strive to adhere to the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards. If you encounter any accessibility barriers while using our website, please contact us using the information provided in the footer. Your feedback is valuable in helping us improve our website's accessibility for everyone.
+                        </p>
+                    </div>
+
+                    <!-- Point 62 -->
+                    <div class="terms-point">
+                        <h3>62. Data Integrity and Accuracy</h3>
+                        <p>
+                            While we implement reasonable measures to ensure the integrity and accuracy of data on our website, Rendoor Aquariums does not guarantee that data transmissions will be error-free or that data will not be lost or corrupted. We advise users to exercise caution and verify any critical information obtained from the website. We are not responsible for any data inaccuracies or losses resulting from technical issues or external factors.
+                        </p>
+                    </div>
+
+                    <!-- Point 63 -->
+                    <div class="terms-point">
+                        <h3>63. Third-Party Software and Tools</h3>
+                        <p>
+                            Our website may integrate or link to third-party software, tools, or platforms (e.g., virtual visualizers, payment gateways). Your use of such third-party resources is subject to their respective terms of service and privacy policies. Rendoor Aquariums is not responsible for the functionality, security, or privacy practices of any third-party software or tools, and we encourage you to review their terms before use.
+                        </p>
+                    </div>
+
+                    <!-- Point 64 -->
+                    <div class="terms-point">
+                        <h3>64. Geographic Restrictions</h3>
+                        <p>
+                            Rendoor Aquariums is based in [Your City/Region, Country]. We provide this website for use primarily by persons located in [Your Country]. We make no claims that the website or any of its content is accessible or appropriate outside of [Your Country]. Access to the website may not be legal by certain persons or in certain countries. If you access the website from outside [Your Country], you do so on your own initiative and are responsible for compliance with local laws.
+                        </p>
+                    </div>
+
+                    <!-- Point 65 -->
+                    <div class="terms-point">
+                        <h3>65. Internet Connection Requirements</h3>
+                        <p>
+                            To access and use the Rendoor Aquariums website and its features, you must have a stable and reliable internet connection. You are solely responsible for obtaining and maintaining all internet access, computer hardware, and other equipment needed to access the website, and for any fees associated therewith. Rendoor Aquariums is not responsible for any service interruptions or performance issues related to your internet connection.
+                        </p>
+                    </div>
+
+                    <!-- Point 66 -->
+                    <div class="terms-point">
+                        <h3>66. Prohibition of Automated Access</h3>
+                        <p>
+                            You agree not to use any robot, spider, or other automatic device, process, or means to access the website for any purpose, including monitoring or copying any of the material on the website. You also agree not to use any manual process to monitor or copy any of the material on the website or for any other unauthorized purpose without our prior written consent. This prevents automated data scraping and ensures fair usage.
+                        </p>
+                    </div>
+
+                    <!-- Point 67 -->
+                    <div class="terms-point">
+                        <h3>67. Feedback and Unsolicited Ideas</h3>
+                        <p>
+                            Rendoor Aquariums does not accept or consider unsolicited ideas, including ideas for new products, services, or technologies. Please do not submit any unsolicited ideas, original creative artwork, suggestions, or other works ("Submissions") in any form to Rendoor Aquariums. The sole purpose of this policy is to avoid potential misunderstandings or disputes when Rendoor Aquariums' products or marketing strategies might seem similar to Submissions made to Rendoor Aquariums.
+                        </p>
+                    </div>
+
+                    <!-- Point 68 -->
+                    <div class="terms-point">
+                        <h3>68. Limitation on Time to File Claims</h3>
+                        <p>
+                            ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF SERVICE OR THE WEBSITE MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES; OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED. This clause sets a time limit for bringing legal claims, promoting timely resolution of disputes.
+                        </p>
+                    </div>
+
+                    <!-- Point 69 -->
+                    <div class="terms-point">
+                        <h3>69. Interpretation of Terms</h3>
+                        <p>
+                            The language in these Terms shall be construed in accordance with its fair meaning and not strictly for or against any party. The use of "including" or "such as" shall be read to mean "including without limitation" or "such as, but not limited to." This ensures a balanced interpretation of the clauses and avoids overly restrictive readings.
+                        </p>
+                    </div>
+
+                    <!-- Point 70 -->
+                    <div class="terms-point">
+                        <h3>70. Conflict with Other Agreements</h3>
+                        <p>
+                            In the event of any conflict or inconsistency between these Terms of Service and any other agreement between you and Rendoor Aquariums (e.g., a specific project contract), the terms of the more specific agreement shall prevail to the extent of the conflict. However, these Terms of Service will continue to apply to your general use of the website. This ensures clarity on which terms govern different aspects of your relationship with us.
+                        </p>
+                    </div>
+
+                    <!-- Point 71 -->
+                    <div class="terms-point">
+                        <h3>71. Non-Disparagement Clause</h3>
+                        <p>
+                            You agree not to engage in any conduct that disparages, defames, or negatively affects the reputation of Rendoor Aquariums, its products, services, or employees. This includes, but is not limited to, posting false or misleading information online, making public negative statements without factual basis, or encouraging others to do so. This clause aims to protect our brand image and business interests from harmful, unfounded criticism.
+                        </p>
+                    </div>
+
+                    <!-- Point 72 -->
+                    <div class="terms-point">
+                        <h3>72. Cooperation with Law Enforcement</h3>
+                        <p>
+                            Rendoor Aquariums reserves the right to cooperate fully with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone posting any materials on or through the website. By accepting these Terms, you waive and hold harmless Rendoor Aquariums from any claims resulting from any action taken by Rendoor Aquariums during or as a result of its investigations and from any actions taken as a consequence of investigations by either Rendoor Aquariums or law enforcement authorities.
+                        </p>
+                    </div>
+
+                    <!-- Point 73 -->
+                    <div class="terms-point">
+                        <h3>73. Data Collection and Privacy Reference</h3>
+                        <p>
+                            Your use of the Rendoor Aquariums website and services is also governed by our Privacy Policy, which is incorporated herein by reference. The Privacy Policy describes how we collect, use, and protect your personal information. By agreeing to these Terms, you also acknowledge and agree to the terms of our Privacy Policy. We encourage you to read the Privacy Policy carefully to understand our data handling practices.
+                        </p>
+                    </div>
+
+                    <!-- Point 74 -->
+                    <div class="terms-point">
+                        <h3>74. Accessibility of Terms</h3>
+                        <p>
+                            These Terms of Service are readily accessible on our website and are provided in a clear and legible format. We encourage you to print or save a copy of these Terms for your records. If you require these Terms in an alternative format due to a disability, please contact us, and we will make reasonable accommodations to provide them in an accessible manner.
+                        </p>
+                    </div>
+
+                    <!-- Point 75 -->
+                    <div class="terms-point">
+                        <h3>75. Legal Expenses</h3>
+                        <p>
+                            In the event that Rendoor Aquariums incurs legal expenses to enforce these Terms, or to defend itself in any action arising from your use of the website or services, you agree to reimburse Rendoor Aquariums for all reasonable legal fees and costs, including attorney's fees, court costs, and collection agency fees, to the fullest extent permitted by law. This ensures that the costs of enforcing our rights are recoverable.
+                        </p>
+                    </div>
+
+                    <!-- Point 76 -->
+                    <div class="terms-point">
+                        <h3>76. Entire Agreement Reiteration</h3>
+                        <p>
+                            To reiterate, these Terms of Service, along with our Privacy Policy and any specific project contracts, constitute the complete and exclusive statement of the agreement between you and Rendoor Aquariums. This supersedes all prior agreements, proposals, and communications, whether electronic, oral, or written, between you and Rendoor Aquariums with respect to the website and services. This clause reinforces the comprehensive nature of our legal framework.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Copied from index.html) -->
+    <footer id="contact" class="bg-[#37474F] text-[#FAFAFA] py-12 md:py-16 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+                <!-- About Rendoor -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#00796B]">Rendoor Aquariums</h3>
+                    <p class="text-sm leading-relaxed opacity-80">
+                        Transforming spaces with living water. We specialize in custom, high-end aquariums that blend seamlessly with modern interiors, bringing tranquility and natural beauty indoors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Quick Links</h3>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="index.html#collections" class="hover:text-[#4FC3F7] transition duration-300">Our Collections</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-[#4FC3F7] transition duration-300">Design Gallery</a></li>
+                        <li><a href="index.html#experience" class="hover:text-[#4FC3F7] transition duration-300">The Rendoor Experience</a></li>
+                        <li><a href="index.html#shop" class="hover:text-[#4FC3F7] transition duration-300">Shop Essentials</a></li>
+                        <li><a href="index.html#quote" class="hover:text-[#4FC3F7] transition duration-300">Get a Custom Quote</a></li>
+                        <li><a href="privacy.html" class="hover:text-[#4FC3F7] transition duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-[#4FC3F7] transition duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Contact Us</h3>
+                    <address class="not-italic text-sm opacity-80 space-y-2">
+                        <p>123 Aqua Drive, Suite 100</p>
+                        <p>Metropolis, State 90210</p>
+                        <p>Country</p>
+                        <p>Email: <a href="mailto:info@rendooraquariums.com" class="hover:text-[#4FC3F7] transition duration-300">info@rendooraquariums.com</a></p>
+                        <p>Phone: <a href="tel:+15551234567" class="hover:text-[#4FC3F7] transition duration-300">+1 (555) 123-4567</a></p>
+                    </address>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.417a.75.75 0 01.07.867 12.083 12.083 0 003.113 6.848 12.083 12.083 0 006.848 3.113.75.75 0 01.867.07l1.375 1.375a1.125 1.125 0 010 1.59L15.66 22.315a1.125 1.125 0 01-1.59 0l-1.375-1.375a.75.75 0 01-.07-.867 12.083 12.083 0 00-6.848-3.113 12.083 12.083 0 00-3.113-6.848.75.75 0 01-.867-.07L2.417 8.34a1.125 1.125 0 010-1.59L8.34 2.417a1.125 1.125 0 011.59 0l1.375 1.375z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.866 8.163 6.84 9.489.5.092.682-.217.682-.483 0-.237-.007-.867-.011-1.7C6.733 19.119 6.18 17.91 6.18 17.91c-.44-.938-1.07-1.188-1.07-1.188-.87-.594.07-.582.07-.582 1.07.075 1.63 1.1 1.63 1.1.95 1.62 2.5 1.158 3.1 1.05.09-.812.37-1.158.67-1.423-2.37-.25-4.85-1.188-4.85-5.298 0-1.168.41-2.123 1.1-2.865-.1-.25-.48-1.35.1-2.82 0 0 .9-.28 2.9-.87 0 0 .87-.2 1.78-.2 1.61-.18 3.3-.18 4.91 0 1.01-.4 1.88-.2 1.88-.2.58 1.47.2 2.57.1 2.82.69.74 1.1 1.69 1.1 2.865 0 4.12-2.48 5.04-4.85 5.29.38.33.74.96.74 1.93 0 1.4-.01 2.5-.01 2.82 0 .26.18.57.68.48C19.134 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#4FC3F7]/30 mt-10 pt-8 text-center text-sm opacity-70">
+                &copy; 2025 Rendoor Aquariums. All rights reserved. | <a href="privacy.html" class="hover:text-[#4FC3F7] transition duration-300">Privacy Policy</a> | <a href="terms.html" class="hover:text-[#4FC3F7] transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

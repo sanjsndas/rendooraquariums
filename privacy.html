@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendoor Aquariums — Privacy Policy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and general body */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #FAFAFA; /* Crystal White */
+            color: #37474F; /* Ocean Slate for text */
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA; /* Crystal White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00796B; /* Deep Aqua */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #004D40; /* Darker Deep Aqua */
+        }
+        /* Specific styling for policy points for better readability */
+        .policy-point {
+            background-color: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0,0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .policy-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .policy-point h3 {
+            color: #00796B; /* Deep Aqua */
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem; /* md:text-2xl */
+        }
+        .policy-point p {
+            font-size: 0.95rem; /* text-base */
+            line-height: 1.75; /* leading-relaxed */
+            color: #4A5568; /* Slightly lighter than Ocean Slate for body text */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Section (Copied from index.html, adjusted for current page) -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-[#00796B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <span class="text-2xl font-bold text-[#37474F]">Rendoor Aquariums</span>
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <ul class="hidden md:flex space-x-8">
+              <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="index.html#quote" class="hidden md:block bg-[#00796B] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#004D40] transition duration-300 shadow-lg">Get a Custom Quote</a>
+
+            <!-- Mobile Menu Button (Hamburger icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-[#37474F] focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20 bg-[#E0F2F7] min-h-screen">
+        <section class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 text-[#00796B]">Rendoor Aquariums Privacy Policy</h1>
+                <p class="text-center text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
+                    At Rendoor Aquariums, your privacy is paramount. This comprehensive Privacy Policy outlines how we collect, use, protect, and handle your Personally Identifiable Information (PII) in accordance with applicable data protection laws. We are committed to transparency and ensuring you understand your rights regarding your data. Please read this policy carefully to get a clear understanding of how we collect, use, protect, or otherwise handle your information.
+                </p>
+                <p class="text-center text-md mb-16 max-w-3xl mx-auto leading-relaxed text-gray-600">
+                    <em>Last Updated: July 3, 2025</em>
+                </p>
+
+                <div class="space-y-8">
+                    <!-- Point 1 -->
+                    <div class="policy-point">
+                        <h3>1. Introduction to Our Privacy Commitment</h3>
+                        <p>
+                            Rendoor Aquariums is deeply committed to safeguarding the privacy and security of your personal data. This policy serves as a foundational document, articulating our unwavering dedication to responsible data handling practices. We recognize the importance of trust in our relationship with you, and this commitment extends to every interaction you have with our website, services, and products. Our goal is to provide you with an unparalleled experience while ensuring your data is treated with the utmost care and respect.
+                        </p>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="policy-point">
+                        <h3>2. Scope and Applicability of This Policy</h3>
+                        <p>
+                            This Privacy Policy applies to all information collected by Rendoor Aquariums through our website (www.rendooraquariums.com), any associated subdomains, mobile applications, and offline interactions such as phone calls, in-person consultations, and email communications. It governs the collection, processing, and storage of data from all individuals who interact with us, including prospective clients, existing customers, website visitors, and business partners. This comprehensive scope ensures that all personal data handled by Rendoor Aquariums falls under the protective umbrella of this policy.
+                        </p>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="policy-point">
+                        <h3>3. Definition of Personal Identifiable Information (PII)</h3>
+                        <p>
+                            Personally Identifiable Information (PII) refers to any data that can be used to identify, contact, or locate a single person, or to identify an individual in context. This includes, but is not limited to, your name, email address, postal address, phone number, and any other information that, when combined with other data, could reasonably be used to identify you. Our careful handling of PII is a cornerstone of our privacy practices, ensuring that your unique identity remains protected.
+                        </p>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="policy-point">
+                        <h3>4. Information We Collect: Direct Interactions</h3>
+                        <p>
+                            When you engage directly with Rendoor Aquariums, such as filling out our custom quote request form, subscribing to our newsletter, or contacting customer support, we collect information you voluntarily provide. This typically includes your full name, email address, phone number, and details about your project or inquiry. This direct collection allows us to understand your needs and provide tailored responses and services, forming the basis of our personalized approach to client engagement.
+                        </p>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="policy-point">
+                        <h3>5. Information We Collect: Usage Data and Analytics</h3>
+                        <p>
+                            We automatically collect certain information when you visit our website, known as usage data. This includes your IP address, browser type, operating system, referring URLs, pages viewed, and the dates/times of your visits. This data is aggregated and anonymized where possible, used to analyze website traffic, understand user behavior, and improve our website's functionality and user experience. This helps us optimize content and navigation to better serve our audience.
+                        </p>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="policy-point">
+                        <h3>6. Information We Collect: Cookies and Tracking Technologies</h3>
+                        <p>
+                            Rendoor Aquariums uses cookies and similar tracking technologies (like pixels and web beacons) to enhance your browsing experience, remember your preferences, and gather information about how you interact with our site. Cookies are small data files stored on your device that help us provide personalized content and analyze site performance. You have control over cookie settings through your browser, allowing you to accept, reject, or delete them based on your preferences.
+                        </p>
+                    </div>
+
+                    <!-- Point 7 -->
+                    <div class="policy-point">
+                        <h3>7. Information We Collect: Demographic Data (Optional)</h3>
+                        <p>
+                            In some instances, and always on an optional basis, we may collect demographic information such as your general location (city/state), industry, or company size. This data helps us to better understand our target audience and tailor our marketing efforts and service offerings to relevant segments. Providing this information is entirely voluntary and does not affect your access to our core services.
+                        </p>
+                    </div>
+
+                    <!-- Point 8 -->
+                    <div class="policy-point">
+                        <h3>8. Information We Collect: Project-Specific Details</h3>
+                        <p>
+                            For custom aquarium projects, we collect detailed information relevant to your specific needs, which may include property type (residential/commercial), room dimensions, aesthetic preferences, desired aquatic species, and budget ranges. This information is critical for our design consultants to create accurate 3D previews and provide precise quotes tailored to your unique vision. This level of detail ensures we can deliver on our promise of bespoke solutions.
+                        </p>
+                    </div>
+
+                    <!-- Point 9 -->
+                    <div class="policy-point">
+                        <h3>9. How We Use Your Information: Service Delivery</h3>
+                        <p>
+                            The primary use of your information is to deliver the services you request. This includes processing your custom quote requests, scheduling consultations, developing design proposals, managing project installations, and providing ongoing maintenance services. Your data enables us to fulfill our contractual obligations and ensure a seamless, high-quality experience from initial inquiry to project completion.
+                        </p>
+                    </div>
+
+                    <!-- Point 10 -->
+                    <div class="policy-point">
+                        <h3>10. How We Use Your Information: Communication and Support</h3>
+                        <p>
+                            We use your contact information to communicate with you about your inquiries, projects, and services. This includes sending confirmations, updates, appointment reminders, and responding to your questions or concerns. Effective communication is vital for customer satisfaction, and we ensure that all correspondence is relevant, timely, and respectful of your preferences. We aim to keep you informed every step of the way.
+                        </p>
+                    </div>
+
+                    <!-- Point 11 -->
+                    <div class="policy-point">
+                        <h3>11. How We Use Your Information: Marketing and Promotions</h3>
+                        <p>
+                            With your explicit consent, we may use your information to send you marketing communications, such as newsletters, promotional offers, and updates about new products or services that may be of interest to you. You always have the option to opt-out of these communications at any time by following the unsubscribe instructions provided in the emails or by contacting us directly. Our marketing efforts are designed to be relevant and non-intrusive.
+                        </p>
+                    </div>
+
+                    <!-- Point 12 -->
+                    <div class="policy-point">
+                        <h3>12. How We Use Your Information: Website Improvement</h3>
+                        <p>
+                            We continuously strive to improve our website and user experience. The usage data and analytics we collect are instrumental in identifying areas for enhancement, such as popular content, navigation patterns, and technical issues. By analyzing this aggregated information, we can make informed decisions to optimize our site's performance, content relevance, and overall usability, ensuring a better experience for all visitors.
+                        </p>
+                    </div>
+
+                    <!-- Point 13 -->
+                    <div class="policy-point">
+                        <h3>13. How We Use Your Information: Internal Operations</h3>
+                        <p>
+                            Your information supports our internal business operations, including accounting, auditing, data analysis, and fraud prevention. This ensures the efficient and secure functioning of our business processes. By maintaining accurate records and analyzing operational data, we can enhance our service delivery, manage resources effectively, and comply with legal and regulatory requirements, contributing to the overall health and stability of Rendoor Aquariums.
+                        </p>
+                    </div>
+
+                    <!-- Point 14 -->
+                    <div class="policy-point">
+                        <h3>14. Data Sharing: Third-Party Service Providers</h3>
+                        <p>
+                            We may share your information with trusted third-party service providers who assist us in operating our website, conducting our business, or providing services to you. These include web hosting providers, payment processors, CRM systems, and email marketing platforms. These third parties are contractually obligated to keep your information confidential and are only permitted to use it for the specific purposes for which we engage them. We ensure they adhere to strict data protection standards.
+                        </p>
+                    </div>
+
+                    <!-- Point 15 -->
+                    <div class="policy-point">
+                        <h3>15. Data Sharing: Legal Requirements and Compliance</h3>
+                        <p>
+                            Rendoor Aquariums may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court order or government agency). This includes complying with legal obligations, enforcing our site policies, or protecting our or others' rights, property, or safety. We prioritize legal compliance while also striving to protect your privacy to the fullest extent permitted by law.
+                        </p>
+                    </div>
+
+                    <!-- Point 16 -->
+                    <div class="policy-point">
+                        <h3>16. Data Sharing: Business Transfers</h3>
+                        <p>
+                            In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred as part of the transaction. We will notify you via email and/or a prominent notice on our website of any such change in ownership or control of your personal information, as well as any choices you may have regarding your personal information. This ensures continuity and transparency in the event of significant business changes.
+                        </p>
+                    </div>
+
+                    <!-- Point 17 -->
+                    <div class="policy-point">
+                        <h3>17. Data Sharing: With Your Consent</h3>
+                        <p>
+                            Beyond the scenarios outlined above, we will only share your personal information with third parties when we have obtained your explicit consent to do so. This might occur if you request us to share your project details with an affiliated interior designer or contractor. Your consent is always voluntary and can be withdrawn at any time, giving you full control over who your data is shared with.
+                        </p>
+                    </div>
+
+                    <!-- Point 18 -->
+                    <div class="policy-point">
+                        <h3>18. Data Security: Our Commitment to Protection</h3>
+                        <p>
+                            We implement a variety of robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include physical, electronic, and managerial procedures designed to safeguard and secure the information we collect online. Our commitment to data security is ongoing, with regular reviews and updates to our protocols to address evolving threats.
+                        </p>
+                    </div>
+
+                    <!-- Point 19 -->
+                    <div class="policy-point">
+                        <h3>19. Data Security: Encryption and Secure Sockets Layer (SSL)</h3>
+                        <p>
+                            Our website uses Secure Sockets Layer (SSL) technology to encrypt the transmission of sensitive data, such as information submitted through our contact and quote request forms. This encryption creates a secure link between your browser and our server, ensuring that data remains private and integral during transit. The presence of "https://" in our website address indicates that SSL is active, providing you with a secure browsing experience.
+                        </p>
+                    </div>
+
+                    <!-- Point 20 -->
+                    <div class="policy-point">
+                        <h3>20. Data Security: Access Control and Employee Training</h3>
+                        <p>
+                            Access to your personal information is restricted to employees who need to know that information to perform their job functions, such as customer service, design consultants, and technical support. All employees with access to personal data undergo regular privacy and security training, emphasizing the importance of data confidentiality and adherence to our strict internal protocols. This human element of security is critical in preventing unauthorized access.
+                        </p>
+                    </div>
+
+                    <!-- Point 21 -->
+                    <div class="policy-point">
+                        <h3>21. Data Security: Data Minimization and Retention</h3>
+                        <p>
+                            We adhere to the principle of data minimization, collecting only the personal information that is strictly necessary for the purposes for which it is processed. We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Once data is no longer needed, it is securely deleted or anonymized, reducing potential risks.
+                        </p>
+                    </div>
+
+                    <!-- Point 22 -->
+                    <div class="policy-point">
+                        <h3>22. Your Data Rights: Right to Access</h3>
+                        <p>
+                            You have the right to request access to the personal information we hold about you. Upon receiving a verifiable request, we will provide you with a copy of your data in a clear and understandable format, along with information about how we use it. This right empowers you to confirm the accuracy of your data and understand our processing activities, fostering transparency in our data handling.
+                        </p>
+                    </div>
+
+                    <!-- Point 23 -->
+                    <div class="policy-point">
+                        <h3>23. Your Data Rights: Right to Rectification</h3>
+                        <p>
+                            If you believe that any personal information we hold about you is inaccurate or incomplete, you have the right to request that we correct or update it. We are committed to maintaining accurate and current data, and we will take reasonable steps to verify and amend your information promptly upon receiving a valid request. Maintaining data accuracy is crucial for effective service delivery and compliance.
+                        </p>
+                    </div>
+
+                    <!-- Point 24 -->
+                    <div class="policy-point">
+                        <h3>24. Your Data Rights: Right to Erasure (Right to Be Forgotten)</h3>
+                        <p>
+                            Under certain circumstances, you have the right to request the deletion of your personal information. This "right to be forgotten" applies when your data is no longer necessary for the purposes for which it was collected, or if you withdraw consent and there is no other legal basis for processing. We will assess each request in accordance with applicable legal requirements and our data retention policies.
+                        </p>
+                    </div>
+
+                    <!-- Point 25 -->
+                    <div class="policy-point">
+                        <h3>25. Your Data Rights: Right to Restrict Processing</h3>
+                        <p>
+                            You have the right to request that we restrict the processing of your personal information in certain situations, such as when you contest the accuracy of the data, or when the processing is unlawful but you oppose erasure. When processing is restricted, we can store your data but not use it, except for specific purposes or with your consent, providing you with a measure of control over your data's use.
+                        </p>
+                    </div>
+
+                    <!-- Point 26 -->
+                    <div class="policy-point">
+                        <h3>26. Your Data Rights: Right to Data Portability</h3>
+                        <p>
+                            You have the right to receive your personal information in a structured, commonly used, and machine-readable format, and to transmit that data to another controller without hindrance from us, where technically feasible. This right facilitates the transfer of your data between service providers, empowering you with greater control and flexibility over your digital information.
+                        </p>
+                    </div>
+
+                    <!-- Point 27 -->
+                    <div class="policy-point">
+                        <h3>27. Your Data Rights: Right to Object to Processing</h3>
+                        <p>
+                            You have the right to object to the processing of your personal information under certain conditions, particularly if the processing is based on legitimate interests or for direct marketing purposes. Upon receiving an objection, we will cease processing your data unless we can demonstrate compelling legitimate grounds for the processing that override your interests, rights, and freedoms, or for the establishment, exercise, or defense of legal claims.
+                        </p>
+                    </div>
+
+                    <!-- Point 28 -->
+                    <div class="policy-point">
+                        <h3>28. Your Data Rights: Rights Related to Automated Decision Making</h3>
+                        <p>
+                            Rendoor Aquariums does not currently engage in automated decision-making, including profiling, that produces legal effects concerning you or similarly significantly affects you. Should our practices change in the future, we will update this policy to inform you of your rights in relation to such processing, including the right to obtain human intervention, express your point of view, and contest the decision.
+                        </p>
+                    </div>
+
+                    <!-- Point 29 -->
+                    <div class="policy-point">
+                        <h3>29. Exercising Your Data Rights</h3>
+                        <p>
+                            To exercise any of your data rights, please contact us using the contact details provided at the end of this Privacy Policy. We may need to request specific information from you to help us confirm your identity and ensure your right to access your personal information (or to exercise any of your other rights). This is a security measure to ensure that personal information is not disclosed to any person who has no right to receive it. We will respond to all legitimate requests within the timeframes required by applicable law.
+                        </p>
+                    </div>
+
+                    <!-- Point 30 -->
+                    <div class="policy-point">
+                        <h3>30. Cookie Policy: Detailed Explanation</h3>
+                        <p>
+                            Our use of cookies is integral to providing a functional and personalized website experience. Cookies are small text files placed on your device by websites that you visit. They are widely used to make websites work, or work more efficiently, as well as to provide information to the owners of the site. We use both session cookies (which are temporary and disappear after you close your browser) and persistent cookies (which remain on your device until they expire or you delete them).
+                        </p>
+                    </div>
+
+                    <!-- Point 31 -->
+                    <div class="policy-point">
+                        <h3>31. Types of Cookies We Use: Essential Cookies</h3>
+                        <p>
+                            Essential cookies are fundamental for the basic functionality of our website. They enable core features like page navigation, accessing secure areas of the site, and ensuring the proper display of content. Without these cookies, the website would not be able to function correctly, making them indispensable for a smooth browsing experience. They do not collect any personally identifiable information.
+                        </p>
+                    </div>
+
+                    <!-- Point 32 -->
+                    <div class="policy-point">
+                        <h3>32. Types of Cookies We Use: Analytical/Performance Cookies</h3>
+                        <p>
+                            These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They allow us to count visits and traffic sources, so we can measure and improve the performance of our site. This data helps us to know which pages are the most and least popular and see how visitors move around the site, enabling continuous optimization of content and layout.
+                        </p>
+                    </div>
+
+                    <!-- Point 33 -->
+                    <div class="policy-point">
+                        <h3>33. Types of Cookies We Use: Functionality Cookies</h3>
+                        <p>
+                            Functionality cookies enable our website to remember choices you make (such as your user name, language, or the region you are in) and provide enhanced, more personal features. For instance, they can remember changes you have made to text size, fonts, and other parts of web pages that you can customize. These cookies enhance your user experience by personalizing your interactions with our site.
+                        </p>
+                    </div>
+
+                    <!-- Point 34 -->
+                    <div class="policy-point">
+                        <h3>34. Types of Cookies We Use: Advertising/Targeting Cookies</h3>
+                        <p>
+                            Advertising or targeting cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns. These cookies are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information is shared with other organizations, such as advertisers.
+                        </p>
+                    </div>
+
+                    <!-- Point 35 -->
+                    <div class="policy-point">
+                        <h3>35. Managing Your Cookie Preferences</h3>
+                        <p>
+                            You have the ability to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website. You can also delete cookies already stored on your computer. Refer to your browser's help menu for instructions on how to manage your cookie settings effectively.
+                        </p>
+                    </div>
+
+                    <!-- Point 36 -->
+                    <div class="policy-point">
+                        <h3>36. Third-Party Links and External Websites</h3>
+                        <p>
+                            Our website may contain links to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies. We strongly advise you to review the privacy policy of every site you visit, as their practices may differ significantly from ours. Your interactions with third-party sites are at your own risk.
+                        </p>
+                    </div>
+
+                    <!-- Point 37 -->
+                    <div class="policy-point">
+                        <h3>37. Children's Privacy Protection</h3>
+                        <p>
+                            Rendoor Aquariums' website and services are not intended for individuals under the age of 13. We do not knowingly collect Personally Identifiable Information from children under 13. If you are a parent or guardian and you learn that your child has provided us with personal information without your consent, please contact us. If we become aware that we have collected personal information from children without verification of parental consent, we take steps to remove that information from our servers.
+                        </p>
+                    </div>
+
+                    <!-- Point 38 -->
+                    <div class="policy-point">
+                        <h3>38. International Data Transfers</h3>
+                        <p>
+                            Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. If you are located outside of [Your Country] and choose to provide information to us, please note that we transfer the data, including Personal Data, to [Your Country] and process it there. By submitting your information, you consent to this transfer.
+                        </p>
+                    </div>
+
+                    <!-- Point 39 -->
+                    <div class="policy-point">
+                        <h3>39. Changes to This Privacy Policy</h3>
+                        <p>
+                            We may update our Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this policy. We encourage you to review this Privacy Policy periodically for any changes. Material changes will be communicated more prominently.
+                        </p>
+                    </div>
+
+                    <!-- Point 40 -->
+                    <div class="policy-point">
+                        <h3>40. Your Consent to This Policy</h3>
+                        <p>
+                            By using our website, you signify your acceptance of this Privacy Policy. If you do not agree to this policy, please do not use our website. Your continued use of the website following the posting of changes to this policy will be deemed your acceptance of those changes. We believe in informed consent and encourage you to reach out with any questions.
+                        </p>
+                    </div>
+
+                    <!-- Point 41 -->
+                    <div class="policy-point">
+                        <h3>41. Data Breach Notification Protocol</h3>
+                        <p>
+                            In the unlikely event of a data breach involving your Personally Identifiable Information, Rendoor Aquariums is committed to prompt and transparent action. We have established a robust data breach notification protocol that adheres to legal requirements. This protocol ensures that affected individuals are notified without undue delay, along with relevant regulatory authorities, providing details about the breach, its potential impact, and the steps we are taking to mitigate risks. Our priority is to protect your data and maintain your trust, even in challenging circumstances.
+                        </p>
+                    </div>
+
+                    <!-- Point 42 -->
+                    <div class="policy-point">
+                        <h3>42. Data Protection Officer (DPO) Contact</h3>
+                        <p>
+                            For comprehensive oversight of our data protection practices and to serve as a direct point of contact for data privacy inquiries, Rendoor Aquariums has designated a Data Protection Officer (DPO). The DPO is responsible for ensuring our compliance with data protection laws, advising on data privacy matters, and handling requests related to individual rights. You can reach our DPO directly using the contact information provided in the "Contact Us" section, ensuring a dedicated resource for your privacy concerns.
+                        </p>
+                    </div>
+
+                    <!-- Point 43 -->
+                    <div class="policy-point">
+                        <h3>43. Log Files and IP Addresses</h3>
+                        <p>
+                            Like many other websites, Rendoor Aquariums makes use of log files. These files merely log visitors to the site – usually a standard procedure for hosting companies and a part of hosting services' analytics. The information inside the log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and possibly the number of clicks. This information is used to analyze trends, administer the site, track user's movement around the site, and gather demographic information. IP addresses and other such information are not linked to any information that is personally identifiable.
+                        </p>
+                    </div>
+
+                    <!-- Point 44 -->
+                    <div class="policy-point">
+                        <h3>44. Web Beacons and Pixels</h3>
+                        <p>
+                            Web beacons, also known as pixel tags or clear GIFs, are tiny graphics with a unique identifier, similar in function to cookies, and are used to track the online movements of web users. In contrast to cookies, which are stored on a user's computer hard drive, web beacons are embedded invisibly on web pages and are about the size of the period at the end of this sentence. We may use web beacons in connection with our website to, among other things, track the activities of visitors, manage content, and compile statistics about site usage.
+                        </p>
+                    </div>
+
+                    <!-- Point 45 -->
+                    <div class="policy-point">
+                        <h3>45. Opt-Out Options for Marketing Communications</h3>
+                        <p>
+                            We respect your communication preferences. If you no longer wish to receive marketing or promotional emails from us, you may opt-out by following the unsubscribe instructions included in each email. Please note that even if you opt-out of receiving marketing communications, we may still send you non-promotional communications, such as those about your account, service updates, or our ongoing business relations. Your ability to control these communications is important to us.
+                        </p>
+                    </div>
+
+                    <!-- Point 46 -->
+                    <div class="policy-point">
+                        <h3>46. Governing Law and Dispute Resolution</h3>
+                        <p>
+                            This Privacy Policy and any disputes arising out of or related to it shall be governed by and construed in accordance with the laws of [Your Country/State, e.g., the State of California, USA], without regard to its conflict of law principles. Any legal action or proceeding relating to your access to, or use of, the website or services shall be instituted in a state or federal court in [Your City/Region, e.g., Los Angeles, California]. By using our services, you consent to the jurisdiction and venue of such courts.
+                        </p>
+                    </div>
+
+                    <!-- Point 47 -->
+                    <div class="policy-point">
+                        <h3>47. Severability of Provisions</h3>
+                        <p>
+                            If any provision of this Privacy Policy is found to be invalid or unenforceable by a court of competent jurisdiction, the invalidity or unenforceability of such provision shall not affect the validity or enforceability of the remaining provisions, which shall remain in full force and effect. This ensures that even if one part of our policy is deemed invalid, the rest of the policy continues to protect your data and govern our practices.
+                        </p>
+                    </div>
+
+                    <!-- Point 48 -->
+                    <div class="policy-point">
+                        <h3>48. Entire Agreement</h3>
+                        <p>
+                            This Privacy Policy, together with our Terms of Service and any other legal notices published by Rendoor Aquariums on the website, shall constitute the entire agreement between you and Rendoor Aquariums concerning your use of the website and services. This comprehensive framework ensures clarity and consistency across all our legal and operational commitments to you.
+                        </p>
+                    </div>
+
+                    <!-- Point 49 -->
+                    <div class="policy-point">
+                        <h3>49. Feedback and Suggestions</h3>
+                        <p>
+                            We value your feedback on our privacy practices. If you have any suggestions, comments, or concerns about this Privacy Policy or how we handle your data, please do not hesitate to contact us. Your input is invaluable in helping us continuously improve our commitment to data protection and transparency. We are always open to constructive criticism that helps us better serve our users.
+                        </p>
+                    </div>
+
+                    <!-- Point 50 -->
+                    <div class="policy-point">
+                        <h3>50. Updates to Our Data Processing Practices</h3>
+                        <p>
+                            As Rendoor Aquariums evolves and adapts to new technologies and regulatory landscapes, our data processing practices may also change. We are committed to keeping this Privacy Policy up-to-date to accurately reflect these changes. We encourage you to periodically review this page to stay informed about how we are protecting your information and what your rights are in relation to these evolving practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Copied from index.html) -->
+    <footer id="contact" class="bg-[#37474F] text-[#FAFAFA] py-12 md:py-16 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+                <!-- About Rendoor -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#00796B]">Rendoor Aquariums</h3>
+                    <p class="text-sm leading-relaxed opacity-80">
+                        Transforming spaces with living water. We specialize in custom, high-end aquariums that blend seamlessly with modern interiors, bringing tranquility and natural beauty indoors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Quick Links</h3>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="index.html#collections" class="hover:text-[#4FC3F7] transition duration-300">Our Collections</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-[#4FC3F7] transition duration-300">Design Gallery</a></li>
+                        <li><a href="index.html#experience" class="hover:text-[#4FC3F7] transition duration-300">The Rendoor Experience</a></li>
+                        <li><a href="index.html#shop" class="hover:text-[#4FC3F7] transition duration-300">Shop Essentials</a></li>
+                        <li><a href="index.html#quote" class="hover:text-[#4FC3F7] transition duration-300">Get a Custom Quote</a></li>
+                        <li><a href="privacy.html" class="hover:text-[#4FC3F7] transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Contact Us</h3>
+                    <address class="not-italic text-sm opacity-80 space-y-2">
+                        <p>123 Aqua Drive, Suite 100</p>
+                        <p>Metropolis, State 90210</p>
+                        <p>Country</p>
+                        <p>Email: <a href="mailto:info@rendooraquariums.com" class="hover:text-[#4FC3F7] transition duration-300">info@rendooraquariums.com</a></p>
+                        <p>Phone: <a href="tel:+15551234567" class="hover:text-[#4FC3F7] transition duration-300">+1 (555) 123-4567</a></p>
+                    </address>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.417a.75.75 0 01.07.867 12.083 12.083 0 003.113 6.848 12.083 12.083 0 006.848 3.113.75.75 0 01.867.07l1.375 1.375a1.125 1.125 0 010 1.59L15.66 22.315a1.125 1.125 0 01-1.59 0l-1.375-1.375a.75.75 0 01-.07-.867 12.083 12.083 0 00-6.848-3.113 12.083 12.083 0 00-3.113-6.848.75.75 0 01-.867-.07L2.417 8.34a1.125 1.125 0 010-1.59L8.34 2.417a1.125 1.125 0 011.59 0l1.375 1.375z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.866 8.163 6.84 9.489.5.092.682-.217.682-.483 0-.237-.007-.867-.011-1.7C6.733 19.119 6.18 17.91 6.18 17.91c-.44-.938-1.07-1.188-1.07-1.188-.87-.594.07-.582.07-.582 1.07.075 1.63 1.1 1.63 1.1.95 1.62 2.5 1.158 3.1 1.05.09-.812.37-1.158.67-1.423-2.37-.25-4.85-1.188-4.85-5.298 0-1.168.41-2.123 1.1-2.865-.1-.25-.48-1.35.1-2.82 0 0 .9-.28 2.9-.87 0 0 .87-.2 1.78-.2 1.61-.18 3.3-.18 4.91 0 1.01-.4 1.88-.2 1.88-.2.58 1.47.2 2.57.1 2.82.69.74 1.1 1.69 1.1 2.865 0 4.12-2.48 5.04-4.85 5.29.38.33.74.96.74 1.93 0 1.4-.01 2.5-.01 2.82 0 .26.18.57.68.48C19.134 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#4FC3F7]/30 mt-10 pt-8 text-center text-sm opacity-70">
+                &copy; 2025 Rendoor Aquariums. All rights reserved. | <a href="privacy.html" class="hover:text-[#4FC3F7] transition duration-300">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

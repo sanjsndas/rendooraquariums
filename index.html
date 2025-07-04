@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendoor Aquariums — Bring Living Water Indoors</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and general body */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #FAFAFA; /* Crystal White */
+            color: #37474F; /* Ocean Slate for text */
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA; /* Crystal White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00796B; /* Deep Aqua */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #004D40; /* Darker Deep Aqua */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-[#00796B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <span class="text-2xl font-bold text-[#37474F]">Rendoor Aquariums</span>
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#quote" class="hidden md:block bg-[#00796B] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#004D40] transition duration-300 shadow-lg">Get a Custom Quote</a>
+
+            <!-- Mobile Menu Button (Hamburger icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-[#37474F] focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
+            <ul class="flex flex-col space-y-2 p-4">
+                 <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[600px] md:h-[700px] flex items-center justify-center text-center bg-cover bg-center rounded-b-3xl shadow-xl overflow-hidden";>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="relative z-10 text-white p-6 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
+                    Design with Depth. Life with Flow.
+                </h1>
+                <p class="text-lg md:text-xl mb-10 opacity-90">
+                    Rendoor Aquariums transforms indoor spaces into serene, living masterpieces. Discover the elegance of custom aquatic design.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#collections" class="bg-[#00796B] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#004D40] transition duration-300 shadow-xl transform hover:scale-105">
+                        Explore Aquarium Designs
+                    </a>
+                    <a href="#quote" class="bg-white text-[#00796B] px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-xl transform hover:scale-105">
+                        Get a Custom Quote
+                    </a>
+                    <a href="#shop" class="bg-[#FF7043] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#E65100] transition duration-300 shadow-xl transform hover:scale-105">
+                        Shop Essentials
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Essence & Introduction -->
+        <section class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl -mt-8 relative z-20">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-[#00796B]">Bring Living Water Indoors</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8 text-lg leading-relaxed">
+                        <p>
+                            At Rendoor Aquariums, we believe that an aquarium is more than just a tank of water; it is a dynamic, living piece of art that breathes life and tranquility into any environment. Our mission is to seamlessly integrate the mesmerizing beauty of aquatic ecosystems into modern interiors, transforming spaces from the ordinary to the extraordinary. We specialize in creating custom aquatic installations that are not merely decorative elements but focal points of calm and natural wonder.
+                        </p>
+                        <p>
+                            From the subtle elegance of a minimalist desktop aquarium that enhances a personal workspace, to the breathtaking grandeur of a large, integrated wall installation that commands attention in a grand lobby, Rendoor designs are meticulously crafted to blend with and elevate your existing aesthetic. We pride ourselves on blending cutting-edge design principles with the intricate requirements of aquatic life, ensuring both unparalleled beauty and thriving ecosystems.
+                        </p>
+                        <p>
+                            Our bespoke solutions are tailored for a diverse range of settings, including sophisticated homes, bustling corporate offices, welcoming hotel lobbies, vibrant restaurants, and serene wellness spaces. Each Rendoor aquarium is a testament to high-end craftsmanship, offering an elegant yet accessible pathway to incorporating the calming influence of living water into your daily life. We appeal to discerning interior designers seeking unique elements, luxury homeowners desiring unparalleled elegance, and modern businesses aiming to create inspiring and tranquil environments for their clients and employees.
+                        </p>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                        <img src="p1.avif" alt="Sleek aquarium in an office lobby" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Aquarium Collections Section -->
+        <section id="collections" class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Our Exquisite Aquarium Collections</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Rendoor Aquariums offers a curated selection of designs, each crafted to perfection and tailored to integrate seamlessly into your space. Explore our diverse range, from intimate desktop pieces to grand architectural statements.
+                </p>
+
+                <!-- Desktop & Nano Aquariums -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 order-2 lg:order-1">
+                        <img src="p2.avif" alt="Minimalist desktop aquarium" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="space-y-6 text-lg leading-relaxed order-1 lg:order-2">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Desktop & Nano Aquariums: Intimate Worlds</h3>
+                        <p>
+                            Perfect for personal spaces, home offices, or small commercial settings, our Desktop and Nano Aquariums bring a touch of living tranquility without demanding significant space. These compact ecosystems are designed with precision, focusing on minimalist aesthetics and ease of maintenance. They are ideal for showcasing vibrant betta fish, delicate shrimp, or intricate planted aquascapes, offering a calming focal point that enhances concentration and reduces stress. Each nano aquarium is a self-contained world, meticulously balanced for optimal aquatic health and visual appeal.
+                        </p>
+                        <p>
+                            Despite their size, these aquariums are equipped with advanced filtration and lighting systems, ensuring a thriving environment for their inhabitants. Their sleek lines and premium materials—such as ultra-clear low-iron glass and custom-fabricated stands—make them elegant additions to any modern interior. Discover how even a small aquatic display can create a profound impact, fostering a sense of peace and connection to nature right at your fingertips.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Compact designs for any surface</li>
+                            <li>High-clarity glass for pristine viewing</li>
+                            <li>Integrated, silent filtration systems</li>
+                            <li>Ideal for small fish, shrimp, and planted setups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Freestanding Showpiece Tanks -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div class="space-y-6 text-lg leading-relaxed">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Freestanding Showpiece Tanks: Sculptural Statements</h3>
+                        <p>
+                            Our Freestanding Showpiece Tanks are designed to be standalone works of art, commanding attention and defining spaces. These aquariums are perfect for larger rooms, open-plan offices, or as a central feature in a restaurant or lobby. Each tank is paired with a custom-designed cabinet or stand that not only conceals essential equipment but also serves as an integral part of the overall aesthetic. Available in a variety of sizes and configurations, from tall, slender pillars to long, panoramic vistas, these aquariums are built to impress.
+                        </p>
+                        <p>
+                            We utilize robust construction techniques and premium materials, ensuring durability and timeless elegance. The focus is on creating a seamless visual experience, where the aquatic life within becomes a living, breathing painting. Whether you envision a vibrant coral reef, a lush Amazonian biotope, or a tranquil Japanese garden-inspired aquascape, our freestanding tanks provide the perfect canvas for your aquatic dreams. They serve as dynamic, ever-changing sculptures that captivate observers and infuse the environment with a unique sense of calm and sophistication.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Custom cabinetry and integrated equipment</li>
+                            <li>Panoramic views for immersive experiences</li>
+                            <li>Ideal for diverse aquatic ecosystems</li>
+                            <li>Perfect as a room divider or central feature</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                        <img src="p3.avif" alt="Elegant freestanding aquarium" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <!-- Built-in Wall & Room Divider Aquariums -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 order-2 lg:order-1">
+                        <img src="p4.avif" alt="Integrated wall aquarium" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="space-y-6 text-lg leading-relaxed order-1 lg:order-2">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Built-in Wall & Room Divider Aquariums: Architectural Integration</h3>
+                        <p>
+                            For the ultimate statement in aquatic design, our Built-in Wall and Room Divider Aquariums offer unparalleled integration into your architectural vision. These installations are meticulously planned and constructed to become an intrinsic part of your space, appearing as living walls or dynamic partitions that separate and define areas while offering breathtaking views from multiple angles. We collaborate closely with architects, interior designers, and contractors to ensure a seamless fit, considering structural integrity, lighting, and access for maintenance from the earliest design stages.
+                        </p>
+                        <p>
+                            The result is a truly immersive experience, where the aquatic world extends beyond the confines of a traditional tank and becomes a living, breathing extension of your environment. Whether enhancing a private residence, creating a calming division in a spa, or adding a luxurious touch to a high-end restaurant, these custom installations redefine luxury. They are engineered for longevity and ease of operation, with hidden filtration systems and automated controls that ensure a pristine and vibrant ecosystem with minimal effort.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Seamless integration into walls or structures</li>
+                            <li>Visible from multiple rooms or areas</li>
+                            <li>Custom-engineered for structural harmony</li>
+                            <li>Ideal for creating stunning focal points and natural partitions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bespoke Custom Aquascapes -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-lg leading-relaxed">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Bespoke Custom Aquascapes: Your Vision, Realized</h3>
+                        <p>
+                            At Rendoor Aquariums, true luxury lies in absolute customization. Our Bespoke Custom Aquascapes service allows you to bring your unique aquatic vision to life, no matter how intricate or ambitious. This service is for those who desire a truly one-of-a-kind aquatic masterpiece, designed from the ground up to reflect their personal style, the specific characteristics of their space, and their desired aquatic inhabitants. Our team of expert aquascapers and designers works hand-in-hand with you, transforming concepts into breathtaking realities.
+                        </p>
+                        <p>
+                            From selecting the perfect geological formations and botanicals to curating a harmonious community of aquatic species, every element is chosen with meticulous care. We consider lighting, water flow, substrate, and filtration to create a self-sustaining, vibrant ecosystem that is not only visually stunning but also biologically sound. Whether you dream of a serene Zen garden under water, a vibrant slice of a coral reef, a dense jungle riverbed, or an abstract artistic expression, Rendoor's bespoke service ensures your aquarium is a unique reflection of your aesthetic and a testament to living art.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Unlimited design possibilities and themes</li>
+                            <li>Expert selection of natural elements and aquatic life</li>
+                            <li>Personalized consultation and 3D design previews</li>
+                            <li>A truly unique, handcrafted aquatic environment</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                        <img src="p5.avif" alt="Custom reef aquascape" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Our Design Gallery: Inspiration in Every Installation</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Explore a selection of our most exquisite projects, showcasing the versatility and beauty of Rendoor Aquariums across a variety of settings. Each image tells a story of design, tranquility, and living art.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- High-end residential installs -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p6.webp" alt="Luxury home living room with large aquarium" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Luxury Residential Oasis</h3>
+                            <p class="text-sm text-gray-600">
+                                A breathtaking built-in aquarium seamlessly integrated into a modern luxury home, transforming the living space into a serene aquatic oasis. This installation features a vibrant freshwater planted tank, bringing natural beauty and a calming presence to the heart of the home. The custom cabinetry and lighting enhance the aesthetic, making it a true centerpiece.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Wellness spaces with aquariums -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p7.avif" alt="Aquarium in a spa relaxation area" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Tranquil Wellness Retreat</h3>
+                            <p class="text-sm text-gray-600">
+                                This installation at a high-end spa provides a focal point for relaxation and meditation. The gentle movement of the water and the vibrant colors of the fish create a soothing atmosphere, enhancing the overall wellness experience for clients. The design emphasizes clean lines and soft lighting to promote a sense of calm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Office, hotel, restaurant projects -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p8.webp" alt="Aquarium as a feature in a modern restaurant" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Dynamic Restaurant Ambiance</h3>
+                            <p class="text-sm text-gray-600">
+                                An impressive room-divider aquarium elevates the dining experience in this contemporary restaurant. It adds a unique, dynamic element that captivates diners, creating an unforgettable ambiance. The custom design ensures easy access for maintenance while maintaining a sleek, integrated look.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p9.avif" alt="Large aquarium in a corporate lobby" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Corporate Elegance Statement</h3>
+                            <p class="text-sm text-gray-600">
+                                A grand aquarium installation in a corporate headquarters lobby, designed to impress and provide a calming welcome. It reflects the company's commitment to modern design and employee well-being, offering a natural escape within the urban environment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p10.webp" alt="Aquarium at a hotel reception desk" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Hotel Reception Serenity</h3>
+                            <p class="text-sm text-gray-600">
+                                This elegant aquarium at a boutique hotel reception desk provides a serene backdrop for guests checking in. Its subtle beauty and calming presence contribute to a luxurious and welcoming first impression.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <img src="p11.webp" alt="Small aquarium in a residential bedroom" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Bedroom Tranquility</h3>
+                            <p class="text-sm text-gray-600">
+                                A small, elegantly designed desktop aquarium brings a touch of nature and calm to a residential bedroom, promoting relaxation and peaceful sleep. Its quiet operation and beautiful aquascape make it a perfect addition to a personal sanctuary.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Rendoor Experience Section -->
+        <section id="experience" class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">The Rendoor Experience: From Vision to Living Reality</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Our commitment to excellence extends beyond design. The Rendoor Experience is a seamless journey, ensuring your aquatic dream is brought to life with precision, expertise, and ongoing support.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Consultation & Space Evaluation -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 10h.01M17 10h.01M12 10h.01M21 10c0 1.5-1.5 3-3 3H6c-1.5 0-3-1.5-3-3m18 0V7a2 2 0 00-2-2H5a2 2 0 00-2 2v3m18 0h-3.586a1 1 0 01-.707-.293l-1.414-1.414a1 1 0 00-.707-.293H7.414a1 1 0 00-.707.293L5.293 8.707A1 1 0 014.586 9H3"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">1. Vision & Consultation</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Our journey begins with a detailed consultation to understand your vision, aesthetic preferences, and the specific characteristics of your space. We conduct thorough site evaluations, considering lighting, structural requirements, and environmental factors to ensure the perfect integration of your Rendoor aquarium. This initial phase is crucial for laying the foundation of a successful and harmonious design.
+                        </p>
+                    </div>
+
+                    <!-- Custom 3D Design Previews -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-4m0 0l-1-1m1 1l1-1m-1 1h.01M12 10V6m0 0l-1-1m1 1l1-1m-1 1h.01M15 17v-4m0 0l-1-1m1 1l1-1m-1 1h.01M12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">2. Bespoke 3D Design</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Leveraging advanced 3D modeling software, we transform your concepts into realistic visual previews. These detailed renderings allow you to visualize your custom aquarium within your actual space, making informed decisions on size, placement, aquascape style, and material finishes. This iterative design process ensures that the final product perfectly aligns with your expectations and integrates seamlessly with your interior.
+                        </p>
+                    </div>
+
+                    <!-- Professional Installation -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">3. Expert Installation</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Our highly skilled and experienced technicians handle every aspect of the installation process with meticulous care. From precise placement and plumbing to the delicate art of aquascaping and initial cycling, we ensure a smooth and efficient setup. We prioritize minimal disruption to your environment, leaving you with a perfectly established, pristine aquatic display ready to thrive.
+                        </p>
+                    </div>
+
+                    <!-- Ongoing Maintenance Services -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">4. Dedicated Maintenance</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            To ensure the long-term health and beauty of your Rendoor aquarium, we offer comprehensive ongoing maintenance services. Our expert team provides regular cleaning, water quality testing, equipment checks, and aquatic life care. This proactive approach guarantees your living water feature remains a pristine and vibrant ecosystem, allowing you to simply enjoy its beauty without the burden of upkeep.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aquatic Life & Accessories Section -->
+        <section class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Curated Aquatic Life & Premium Accessories</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Beyond the stunning aquariums themselves, Rendoor offers guidance on selecting the perfect aquatic inhabitants and provides access to the finest equipment to ensure a thriving, beautiful ecosystem.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-lg leading-relaxed">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Harmonious Aquatic Species Recommendations</h3>
+                        <p>
+                            Choosing the right aquatic inhabitants is crucial for a balanced and visually appealing aquarium. Our experts provide personalized recommendations for fish, invertebrates, and other aquatic life that are compatible with your chosen aquascape style and tank size. We prioritize species known for their beauty, health, and suitability for captive environments, ensuring a vibrant and harmonious community within your living water feature. Our guidance covers everything from peaceful community fish for planted tanks to specialized species for intricate reef systems, always with an emphasis on animal welfare and ecological balance.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Expert advice on species compatibility</li>
+                            <li>Focus on health and longevity of aquatic life</li>
+                            <li>Recommendations for freshwater and saltwater setups</li>
+                            <li>Guidance on feeding and behavioral patterns</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 order-2 lg:order-1">
+                    </div>
+                    <div class="space-y-6 text-lg leading-relaxed order-1 lg:order-2">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Premium Equipment & Aquascaping Essentials</h3>
+                        <p>
+                            A truly thriving aquarium relies on high-quality equipment. Rendoor partners with leading manufacturers to provide premium lighting, advanced filtration systems, precise temperature control, and smart automation solutions. These components are selected for their reliability, efficiency, and ability to support a healthy aquatic environment. Furthermore, we offer a curated selection of aquascaping plants, natural décor elements like driftwood and rocks, and specialized substrates to help you create the perfect underwater landscape. Our accessories are chosen to complement the sleek design of our aquariums and ensure long-term success for both novice and experienced aquarists.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>State-of-the-art filtration and lighting</li>
+                            <li>Automated feeding and monitoring systems</li>
+                            <li>High-quality aquascaping materials</li>
+                            <li>Durable and aesthetically pleasing décor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Tools & Features Section (Conceptual) -->
+        <section class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Interactive Tools & Features</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Rendoor Aquariums empowers you with innovative tools designed to simplify your journey from inspiration to installation. Explore possibilities and envision your perfect aquatic space.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Virtual Aquarium Visualizer -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Virtual Aquarium Visualizer</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Imagine your Rendoor aquarium in your own space before it's even built. Our virtual visualizer allows you to upload a photo of your room and overlay different aquarium styles and sizes, giving you a realistic preview of how your chosen design will integrate with your interior. This powerful tool helps you make confident design decisions.
+                        </p>
+                        <button class="mt-6 bg-[#FF7043] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#E65100] transition duration-300 shadow-md">Launch Visualizer</button>
+                    </div>
+
+                    <!-- Tank Size Selector -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Tank Size Selector</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Not sure what size aquarium fits your space? Our intuitive Tank Size Selector helps you find the ideal dimensions based on your room's measurements and desired capacity. Input your available space, and we'll recommend suitable Rendoor models, ensuring a perfect fit and optimal visual impact.
+                        </p>
+                        <button class="mt-6 bg-[#FF7043] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#E65100] transition duration-300 shadow-md">Find Your Size</button>
+                    </div>
+
+                    <!-- Aquascape Mood Selector -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Aquascape Mood Selector</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Define the ambiance of your aquatic world. Choose from popular themes like Zen, Reef, Jungle, or Minimalist, and our Aquascape Mood Selector will present design ideas, plant suggestions, and compatible aquatic species to match your desired aesthetic. Craft the perfect underwater narrative for your space.
+                        </p>
+                        <button class="mt-6 bg-[#FF7043] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#E65100] transition duration-300 shadow-md">Select Your Mood</button>
+                    </div>
+
+                    <!-- Quote Request Form -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-500">
+                        <div class="text-[#00796B] mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Custom Quote Request Form</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Ready to take the next step? Our guided Quote Request Form makes it easy to provide us with the details of your project. Answer a few simple questions about your space and preferences, and receive a personalized estimate for your custom Rendoor aquarium, bringing you closer to your living water dream.
+                        </p>
+                        <a href="#quote" class="mt-6 bg-[#FF7043] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#E65100] transition duration-300 shadow-md inline-block">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Experience Section -->
+        <section class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Rendoor on the Go: Seamless Mobile Experience</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Access the world of Rendoor Aquariums anytime, anywhere. Our mobile-optimized platform ensures a fluid and engaging experience, keeping you connected to your aquatic journey.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-lg leading-relaxed">
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4">Intuitive Browsing & Inspiration</h3>
+                        <p>
+                            Whether you're on a tablet at home or your smartphone on the go, our website provides a fully responsive and intuitive browsing experience. Explore our stunning design galleries, delve into the details of our aquarium collections, and discover inspiration for your next project with ease. High-resolution imagery and crisp text adapt perfectly to any screen size, ensuring a visually rich and informative journey.
+                        </p>
+                        <h3 class="text-3xl md:text-4xl font-semibold text-[#00796B] mb-4 mt-8">Client Portal & AR Previews</h3>
+                        <p>
+                            For existing clients, our mobile platform offers a dedicated portal to track maintenance schedules, access care guides, and communicate directly with your Rendoor design consultants. Furthermore, our cutting-edge AR (Augmented Reality) preview feature allows you to visualize potential aquarium placements in real-time within your own space, using your device's camera. This revolutionary tool helps you make the most informed decisions about size, location, and overall aesthetic impact before any physical installation begins.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-[#37474F]">
+                            <li>Fully responsive design for all devices</li>
+                            <li>Dedicated client login for maintenance tracking</li>
+                            <li>AR preview for virtual aquarium placement</li>
+                            <li>Quick access to Rendoor design consultants</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rendoor Essentials Shop Section -->
+        <section id="shop" class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">The Rendoor Essentials Shop: Elevate Your Aquatic World</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Beyond custom installations, our online shop provides access to a curated selection of premium products to enhance and maintain your Rendoor aquarium.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Designer Aquariums & Stands -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Designer Aquariums & Stands</h3>
+                            <p class="text-sm text-gray-600">
+                                Explore our collection of pre-designed, high-quality aquariums and matching stands, perfect for those seeking Rendoor elegance with a quicker setup. Each piece reflects our commitment to modern aesthetics and superior craftsmanship, offering a seamless blend of form and function.
+                            </p>
+                            <button class="mt-4 bg-[#FF7043] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#E65100] transition duration-300">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Premium Lighting, Filtration, Smart Controls -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Premium Equipment & Smart Controls</h3>
+                            <p class="text-sm text-gray-600">
+                                Optimize your aquarium's environment with our selection of advanced lighting, robust filtration systems, and intelligent smart controls. These essential components ensure the health and vitality of your aquatic ecosystem, offering convenience and peace of mind through automation.
+                            </p>
+                            <button class="mt-4 bg-[#FF7043] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#E65100] transition duration-300">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Aquatic plants, décor, and substrates -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Aquascaping Plants & Décor</h3>
+                            <p class="text-sm text-gray-600">
+                                Create stunning underwater landscapes with our carefully chosen aquatic plants, natural driftwood, decorative rocks, and premium substrates. Our selection supports diverse aquascaping styles, from lush planted tanks to minimalist Iwagumi layouts, allowing your creativity to flourish.
+                            </p>
+                            <button class="mt-4 bg-[#FF7043] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#E65100] transition duration-300">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Starter kits for first-time aquarium owners -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#37474F] mb-2">Starter Kits for New Aquarists</h3>
+                            <p class="text-sm text-gray-600">
+                                Embark on your aquatic journey with confidence using our specially curated starter kits. These all-inclusive packages provide everything a first-time aquarium owner needs, from a compact tank and essential equipment to initial water treatments and a comprehensive guide.
+                            </p>
+                            <button class="mt-4 bg-[#FF7043] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#E65100] transition duration-300">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Rendoor Aquariums is Unique Section -->
+        <section class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">Why Rendoor Aquariums Stands Apart</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Rendoor Aquariums redefines the concept of indoor water features. Our commitment to design, quality, and holistic well-being sets us apart in the world of aquatic installations.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Design-First Approach</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            We prioritize aesthetics and integration. Unlike traditional aquariums, Rendoor designs are conceived as architectural elements, enhancing the overall interior design rather than merely occupying space. Our focus is on creating living art that complements and elevates modern living and working environments.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Seamless Blending of Architecture & Life</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Our expertise lies in creating installations where the aquatic feature feels like an organic extension of the building itself. We work with architects and designers to ensure structural harmony, hidden mechanics, and a fluid visual transition from solid elements to living water.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Customizable & Scalable Solutions</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Every Rendoor project is unique. We offer fully customizable solutions, from bespoke dimensions and materials to intricate aquascaping themes. Our capabilities scale from intimate nano tanks for private residences to expansive commercial installations, always tailored to the client's specific needs.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Focus on Wellness & Visual Impact</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            We understand the profound calming and therapeutic effects of aquatic environments. Our designs are optimized not just for beauty but also for fostering a sense of tranquility, reducing stress, and creating a captivating visual focal point that enhances overall well-being.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Comprehensive Professional Support</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            From the initial conceptualization and 3D design previews to professional installation and meticulous ongoing maintenance, Rendoor provides end-to-end support. Our dedicated team ensures your aquatic feature remains pristine and vibrant for years to come, allowing you to enjoy its beauty worry-free.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-500">
+                        <h3 class="text-xl font-semibold mb-3 text-[#37474F]">Uncompromising Quality & Craftsmanship</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            We use only the highest quality materials, from ultra-clear glass to durable, marine-grade components. Our fabrication and installation processes adhere to the strictest standards, ensuring longevity, safety, and an impeccable finish that reflects true luxury.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Satisfaction Section -->
+        <section class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-[#00796B]">What Our Clients Say: Voices of Satisfaction</h2>
+                <p class="text-center text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Our greatest reward is the joy and tranquility our aquariums bring to our clients' spaces. Here's what some of them have shared about their Rendoor experience.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-500">
+                        <p class="text-lg italic mb-4">
+                            "Rendoor Aquariums transformed our corporate lobby into a breathtaking sanctuary. The built-in reef tank is a masterpiece, captivating everyone who walks through our doors. The professionalism and attention to detail from consultation to maintenance have been exceptional."
+                        </p>
+                        <p class="font-semibold text-[#37474F]">- Sarah L., CEO of Innovate Corp.</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-500">
+                        <p class="text-lg italic mb-4">
+                            "As an interior designer, I'm always looking for unique elements. Rendoor delivered beyond expectations with a custom wall aquarium for my client's luxury residence. It's not just an aquarium; it's a living art installation that perfectly complements the modern aesthetic. Their team is a dream to work with."
+                        </p>
+                        <p class="font-semibold text-[#37474F]">- Mark D., Lead Interior Designer</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-500">
+                        <p class="text-lg italic mb-4">
+                            "Our family absolutely adores our Rendoor aquarium. It brings so much life and calm into our home. The installation was seamless, and their maintenance service ensures it always looks pristine. It's truly the centerpiece of our living room."
+                        </p>
+                        <p class="font-semibold text-[#37474F]">- Jessica P., Homeowner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Request Form Section -->
+        <section id="quote" class="py-16 md:py-24 bg-[#FAFAFA] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-[#00796B]">Get a Custom Quote</h2>
+                <p class="text-center text-lg mb-10 leading-relaxed">
+                    Ready to bring living water indoors? Tell us about your vision, and our design consultants will provide a personalized estimate for your Rendoor aquarium project.
+                </p>
+
+                <form class="bg-white p-8 rounded-xl shadow-2xl space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200" placeholder="(123) 456-7890">
+                    </div>
+                    <div>
+                        <label for="project_type" class="block text-sm font-medium text-gray-700 mb-2">Type of Project</label>
+                        <select id="project_type" name="project_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200" required>
+                            <option value="">Select...</option>
+                            <option value="residential">Residential Home</option>
+                            <option value="office">Office / Corporate</option>
+                            <option value="retail">Retail / Restaurant</option>
+                            <option value="wellness">Wellness / Spa</option>
+                            <option value="other">Other Commercial</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="aquarium_type" class="block text-sm font-medium text-gray-700 mb-2">Desired Aquarium Type</label>
+                        <select id="aquarium_type" name="aquarium_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200">
+                            <option value="">Select...</option>
+                            <option value="desktop">Desktop / Nano</option>
+                            <option value="freestanding">Freestanding Showpiece</option>
+                            <option value="built-in">Built-in Wall / Room Divider</option>
+                            <option value="bespoke">Bespoke Custom Aquascape</option>
+                            <option value="not_sure">Not Sure Yet</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Tell us about your vision (e.g., size, theme, location)</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00796B] focus:border-transparent transition duration-200" placeholder="Describe your ideal aquarium project..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#00796B] text-white px-6 py-3 rounded-full font-semibold text-lg hover:bg-[#004D40] transition duration-300 shadow-xl transform hover:scale-105">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="py-16 md:py-24 bg-[#E0F2F7] text-[#37474F] rounded-t-3xl shadow-inner">
+            <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-[#FF7043]">Important Disclaimers and Terms of Service</h2>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-sm leading-relaxed space-y-6">
+                    <p>
+                        Welcome to Rendoor Aquariums. By accessing or using our website, services, or products, you agree to comply with and be bound by the following disclaimers and terms of service. Please review them carefully. If you do not agree with these terms, you should not use our website or services.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">1. General Information and Educational Purposes Only</h3>
+                    <p>
+                        The content provided on the Rendoor Aquariums website, including but not limited to text, graphics, images, and information, is for general informational and educational purposes only. It is not intended as, and should not be considered, professional advice regarding aquarium design, installation, maintenance, aquatic animal care, or any other related field. While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">2. Product and Service Variations</h3>
+                    <p>
+                        Rendoor Aquariums specializes in custom and bespoke aquatic installations. As such, the images, descriptions, and specifications of products and services displayed on this website are illustrative and represent examples of our work. Actual products and services delivered may vary based on client specifications, material availability, design evolution, and specific site conditions. We reserve the right to modify product designs, materials, and service offerings without prior notice. All custom quotes and project proposals will detail the specific inclusions and exclusions for your unique project. Minor variations in color, texture, and appearance of natural materials (e.g., wood, stone, coral) are inherent and should be expected.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">3. Aquatic Life and Ecosystems</h3>
+                    <p>
+                        The health and longevity of aquatic life within an aquarium are dependent on numerous factors, including but not limited to proper initial setup, consistent maintenance, water quality management, appropriate feeding, and environmental stability. While Rendoor Aquariums provides expert guidance, professional installation, and ongoing maintenance services, we cannot guarantee the survival or health of specific aquatic species beyond the initial acclimation period due to the biological complexities and external variables beyond our control (e.g., client adherence to care instructions, power outages, unforeseen environmental changes). Our recommendations for aquatic species are based on general compatibility and suitability, but individual results may vary. Clients are responsible for adhering to all care instructions provided by Rendoor Aquariums and for promptly reporting any concerns regarding the health of their aquatic ecosystem.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">4. Maintenance and Client Responsibilities</h3>
+                    <p>
+                        While Rendoor Aquariums offers comprehensive maintenance plans, the long-term success and aesthetic appeal of your aquarium require a collaborative effort. Clients are responsible for basic daily observations, feeding, and adherence to any specific instructions provided by Rendoor Aquariums. Failure to follow recommended care guidelines or to schedule and allow access for routine maintenance visits may impact the health of the aquatic inhabitants and the condition of the installation, potentially voiding any implied warranties or guarantees related to the ecosystem's vitality. Any damage resulting from client negligence, misuse, or unauthorized modifications will not be covered under Rendoor Aquariums' service agreements.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">5. Limitation of Liability</h3>
+                    <p>
+                        In no event will Rendoor Aquariums, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the website; (ii) any conduct or content of any third party on the website; (iii) any content obtained from the website; and (iv) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">6. Intellectual Property</h3>
+                    <p>
+                        All content on this website, including text, graphics, logos, images, designs, and software, is the property of Rendoor Aquariums or its content suppliers and protected by international copyright laws. The Rendoor Aquariums name, logo, and taglines are trademarks of Rendoor Aquariums. Unauthorized use of any materials on this site without express written permission from Rendoor Aquariums is strictly prohibited.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">7. Links to Other Websites</h3>
+                    <p>
+                        Our website may contain links to third-party websites or services that are not owned or controlled by Rendoor Aquariums. Rendoor Aquariums has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that Rendoor Aquariums shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services. We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">8. Governing Law and Jurisdiction</h3>
+                    <p>
+                        These disclaimers and terms of service shall be governed and construed in accordance with the laws of [Your Country/State, e.g., the State of California, USA] without regard to its conflict of law provisions. Any disputes arising under or in connection with these terms shall be subject to the exclusive jurisdiction of the courts located in [Your City/Region, e.g., Los Angeles, California].
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">9. Changes to Disclaimers and Terms</h3>
+                    <p>
+                        Rendoor Aquariums reserves the right, at our sole discretion, to modify or replace these disclaimers and terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our website or services after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the website and services.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-[#00796B]">10. Contact Us</h3>
+                    <p>
+                        If you have any questions about these Disclaimers or Terms of Service, please contact us at the address or email provided in the footer of this website.
+                    </p>
+                    <p class="mt-8 text-center text-gray-500">
+                        <em>Last updated: July 3, 2025</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-[#37474F] text-[#FAFAFA] py-12 md:py-16 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+                <!-- About Rendoor -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#00796B]">Rendoor Aquariums</h3>
+                    <p class="text-sm leading-relaxed opacity-80">
+                        Transforming spaces with living water. We specialize in custom, high-end aquariums that blend seamlessly with modern interiors, bringing tranquility and natural beauty indoors.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Quick Links</h3>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li><a href="#collections" class="hover:text-[#4FC3F7] transition duration-300">Our Collections</a></li>
+                        <li><a href="#gallery" class="hover:text-[#4FC3F7] transition duration-300">Design Gallery</a></li>
+                        <li><a href="#experience" class="hover:text-[#4FC3F7] transition duration-300">The Rendoor Experience</a></li>
+                        <li><a href="#shop" class="hover:text-[#4FC3F7] transition duration-300">Shop Essentials</a></li>
+                        <li><a href="#quote" class="hover:text-[#4FC3F7] transition duration-300">Get a Custom Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#00796B]">Contact Us</h3>
+                    <address class="not-italic text-sm opacity-80 space-y-2">
+                        <p>123 Aqua Drive, Suite 100</p>
+                        <p>Metropolis, State 90210</p>
+                        <p>Country</p>
+                        <p>Email: <a href="mailto:info@rendooraquariums.com" class="hover:text-[#4FC3F7] transition duration-300">info@rendooraquariums.com</a></p>
+                        <p>Phone: <a href="tel:+15551234567" class="hover:text-[#4FC3F7] transition duration-300">+1 (555) 123-4567</a></p>
+                    </address>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.417a.75.75 0 01.07.867 12.083 12.083 0 003.113 6.848 12.083 12.083 0 006.848 3.113.75.75 0 01.867.07l1.375 1.375a1.125 1.125 0 010 1.59L15.66 22.315a1.125 1.125 0 01-1.59 0l-1.375-1.375a.75.75 0 01-.07-.867 12.083 12.083 0 00-6.848-3.113 12.083 12.083 0 00-3.113-6.848.75.75 0 01-.867-.07L2.417 8.34a1.125 1.125 0 010-1.59L8.34 2.417a1.125 1.125 0 011.59 0l1.375 1.375z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-[#FAFAFA] hover:text-[#4FC3F7] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.866 8.163 6.84 9.489.5.092.682-.217.682-.483 0-.237-.007-.867-.011-1.7C6.733 19.119 6.18 17.91 6.18 17.91c-.44-.938-1.07-1.188-1.07-1.188-.87-.594.07-.582.07-.582 1.07.075 1.63 1.1 1.63 1.1.95 1.62 2.5 1.158 3.1 1.05.09-.812.37-1.158.67-1.423-2.37-.25-4.85-1.188-4.85-5.298 0-1.168.41-2.123 1.1-2.865-.1-.25-.48-1.35.1-2.82 0 0 .9-.28 2.9-.87 0 0 .87-.2 1.78.2 1.61-.18 3.3-.18 4.91 0 1.01-.4 1.88-.2 1.88-.2.58 1.47.2 2.57.1 2.82.69.74 1.1 1.69 1.1 2.865 0 4.12-2.48 5.04-4.85 5.29.38.33.74.96.74 1.93 0 1.4-.01 2.5-.01 2.82 0 .26.18.57.68.48C19.134 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#4FC3F7]/30 mt-10 pt-8 text-center text-sm opacity-70">
+                &copy; 2025 Rendoor Aquariums. All rights reserved. | <a href="#disclaimer" class="hover:text-[#4FC3F7] transition duration-300">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
