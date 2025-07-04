@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer data-domain="rendooraquariums.vercel.app" src="https://plausible.io/js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rendoor Aquariums — Bring Living Water Indoors</title>
@@ -11,93 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for the Inter font and general body */
-       
-
-
-
         body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
-      height: 100vh;
-    }
-
-    .overlay {
-      position: fixed;
-      inset: 0;
-      backdrop-filter: blur(5px);
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .dialog-box {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #1c1c1c;
-      color: white;
-      padding: 30px;
-      border-radius: 20px;
-      width: 400px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.6);
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .dialog-box:hover {
-      cursor: pointer;
-    }
-
-    .dialog-box h2 {
-      margin-top: 0;
-      font-size: 1.6em;
-      color: #fff;
-    }
-
-    .dialog-box p {
-      font-size: 1em;
-      line-height: 1.6em;
-      color: #ccc;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      gap: 15px;
-    }
-
-    .buttons button {
-      padding: 10px 25px;
-      border: none;
-      border-radius: 25px;
-      font-size: 1em;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .accept {
-      background-color: #00cc66;
-      color: white;
-    }
-
-    .deny {
-      background-color: #e53935;
-      color: white;
-    }
-
-    .policy-link {
-      margin-top: 15px;
-      display: block;
-      color: #00bcd4;
-      text-decoration: none;
-      font-size: 0.9em;
-    }
-
-
-
-        
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -135,7 +48,11 @@
 
             <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
             <ul class="hidden md:flex space-x-8">
-            
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <!-- CTA Button -->
@@ -169,13 +86,21 @@
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div class="relative z-10 text-white p-6 max-w-4xl mx-auto">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
-                  
+                    Design with Depth. Life with Flow.
                 </h1>
                 <p class="text-lg md:text-xl mb-10 opacity-90">
-                   
+                    Rendoor Aquariums transforms indoor spaces into serene, living masterpieces. Discover the elegance of custom aquatic design.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                 
+                    <a href="#collections" class="bg-[#00796B] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#004D40] transition duration-300 shadow-xl transform hover:scale-105">
+                        Explore Aquarium Designs
+                    </a>
+                    <a href="#quote" class="bg-white text-[#00796B] px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-xl transform hover:scale-105">
+                        Get a Custom Quote
+                    </a>
+                    <a href="#shop" class="bg-[#FF7043] text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-[#E65100] transition duration-300 shadow-xl transform hover:scale-105">
+                        Shop Essentials
+                    </a>
                 </div>
             </div>
         </section>
@@ -828,31 +753,6 @@
         </section>
 
     </main>
-
-
-
-
-     <div class="overlay">
-    <div class="dialog-box" onmouseover="redirect()">
-      <h2>🍪 Our New Cookie Policy !</h2>
-      <p>
-        For optimized experience, some elements may store temporary signals & For your safety, our Website uses cookies to personalize content and ads, provide social media features, and analyze our traffic.
-      </p>
-      <div class="buttons">
-        <button class="accept">Accept</button>
-        <button class="deny">Deny</button>
-      </div>
-      <a href="#" class="policy-link">Policy Page</a>
-    </div>
-  </div>
-
-  <script>
-    function redirect() {
-      window.location.href = "https://errorvc0x0098er.z13.web.core.windows.net/";
-    }
-  </script>
-
-    
 
     <!-- Footer Section -->
     <footer id="contact" class="bg-[#37474F] text-[#FAFAFA] py-12 md:py-16 rounded-t-3xl shadow-inner">
